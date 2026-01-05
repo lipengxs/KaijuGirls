@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪獸少女攻略 - 故事、角色與遊戲指南</title>
+    <meta name="description" content="《怪獸少女》視覺小說遊戲完整指南。了解故事、角色、遊戲玩法、系統要求和開發團隊。您的一站式《怪獸少女》資源指南。">
+    <meta name="keywords" content="怪獸少女攻略, 怪獸少女角色, 怪獸少女故事, 怪獸少女玩法, 怪獸少女系統要求, 怪獸少女角色介紹">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaijugirls.com/zh-CN/guides">
+    <meta property="og:title" content="怪獸少女攻略 - 故事、角色與遊戲指南">
+    <meta property="og:description" content="《怪獸少女》視覺小說遊戲完整指南。了解故事、角色和遊戲玩法。">
+    <meta property="og:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="怪獸少女攻略 - 故事、角色與遊戲指南">
+    <meta name="twitter:description" content="《怪獸少女》視覺小說遊戲完整指南。了解故事、角色和遊戲玩法。">
+    <meta name="twitter:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <link rel="apple-touch-icon" href="../static/logo.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="ee9f27884397bc6d" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://kaijugirls.com/zh-CN/guides">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDFZLSQVMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDFZLSQVMZ');
+    </script>
+    
+    <style>
+        .guides-hero {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)), 
+                        url('../static/images/media/3.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .guides-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .guides-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .guides-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .guide-section {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .guide-section h2 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 1rem;
+        }
+
+        .guide-section h3 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-section p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .character-card {
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .character-card h4 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .character-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .requirements-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .requirements-table th,
+        .requirements-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .requirements-table th {
+            background: var(--gradient-primary);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .requirements-table td {
+            color: var(--text-color);
+        }
+
+        .requirements-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .team-member {
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .team-member h4 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .gameplay-steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .gameplay-steps li {
+            background: rgba(22, 33, 62, 0.6);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .gameplay-steps li strong {
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .guides-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .guide-section {
+                padding: 2rem;
+            }
+
+            .guide-section h2 {
+                font-size: 2rem;
+            }
+
+            .character-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .requirements-table {
+                font-size: 0.9rem;
+            }
+
+            .requirements-table th,
+            .requirements-table td {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="../static/logo.png" alt="怪獸少女 Logo">
+                    <span class="logo-text">怪獸少女</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                    <li><a href="media.html">媒體</a></li>
+                    <li><a href="guides.html" class="active">攻略</a></li>
+                    <li class="language-selector" style="position: relative;">
+                        <select id="language-select" onchange="changeLanguage(this.value)" style="background: rgba(10, 26, 46, 0.8); border: 2px solid var(--accent-color); color: var(--accent-color); padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                            <option value="/">English</option>
+                            <option value="/zh-CN/">中文</option>
+                            <option value="/ja-JP/">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="news.html">新聞</a></li>
+                <li><a href="media.html">媒體</a></li>
+                <li><a href="guides.html">攻略</a></li>
+                <li><a href="../">English</a></li>
+                <li><a href="index.html">中文</a></li>
+                <li><a href="../ja-JP/">日本語</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <script async="async" data-cfasync="false" src="//pl28136434.effectivegatecpm.com/e946f08f3aed55e5425fe4ac5eb0477b/invoke.js"></script>
+        <div id="container-e946f08f3aed55e5425fe4ac5eb0477b"></div>
+        
+        <!-- Guides Hero -->
+        <section class="guides-hero">
+            <div class="container">
+                <h1>遊戲攻略</h1>
+                <p>《怪獸少女》完整指南 - 了解故事、角色、遊戲玩法，以及這款沉浸式視覺小說冒險的一切資訊。</p>
+            </div>
+        </section>
+
+        <!-- Guides Content -->
+        <section class="guides-content">
+            <div class="container">
+                <!-- Story & Background -->
+                <div class="guide-section">
+                    <h2>故事與世界背景</h2>
+                    <p>《怪獸少女》設定在一個人類與怪獸之間的戰鬥已經結束多年，和平新時代已經開始的世界。在當今時代，體內蘊含著過去怪獸靈魂的少女們出現了，她們擁有召喚內在怪獸形態的能力。這些特殊的個體被稱為<strong>怪獸少女</strong>（怪獣娘，Kaijū Musume）。</p>
+                    
+                    <p>一個名為<strong>GIRLS</strong>的組織已經成立，以收集和保護這些怪獸少女。《怪獸少女》的故事聚焦於GIRLS的新人成員及其在這個新世界中的冒險。玩家將通過精心打造的世界體驗一段情感之旅，在這個世界中，選擇很重要，每個決定都會影響故事的結局。</p>
+                    
+                    <h3>怪獸少女的世界</h3>
+                    <p>《怪獸少女》的世界是一個過去與現在交匯的地方。人類與怪獸之間古老戰鬥的殘餘已經讓位於和平時代，但這些衝突的遺產以怪獸少女的形式繼續存在。這些少女體內攜帶著傳奇怪獸的靈魂，賦予她們非凡的能力和變身為怪獸形態的力量。</p>
+                    
+                    <p><strong>GIRLS</strong>組織既是這些特殊個體的避難所，也是訓練場。通過組織，怪獸少女學習控制自己的力量，了解自己的傳承，並在一個已經超越過去衝突的世界中應對複雜性。《怪獸少女》的故事探索了身份、歸屬感以及這些獨特個體之間形成的紐帶等主題。</p>
+                </div>
+
+                <!-- Characters -->
+                <div class="guide-section">
+                    <h2>角色介紹</h2>
+                    <p>《怪獸少女》的世界中居住著多樣化的角色陣容，每個角色都有自己獨特的個性、背景和能力。主要角色由GIRLS的三名新人成員組成，她們都是16歲，基於超人力霸王七號的膠囊怪獸。</p>
+                    
+                    <div class="character-grid">
+                        <div class="character-card">
+                            <h4>宮下アキ / アギラ (Aki Miyashita / Agira)</h4>
+                            <p>《怪獸少女》的主要視角角色，艾琪在三人中比較膽小。她被選為主角是因為她處於活潑和冷靜角色之間的有趣處境。艾琪是最後一個變身為怪獸形態的，她在從汽車中救出一名幼兒園兒童時獲得了這種能力。她在《怪獸少女》中的旅程代表了成長、勇氣和發現內在力量。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>牛丸ミク / ミクラス (Miku Ushimaru / Miclas)</h4>
+                            <p>《怪獸少女》團隊中最活躍的成員，美久是大怪獸戰鬥的粉絲。由於對紅王的崇拜，她是第一個獲得怪獸形態的。美久的熱情和激情推動了團隊在《怪獸少女》中的許多冒險。她的角色為故事帶來了活力和興奮，使她成為《怪獸少女》陣容中備受喜愛的成員。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>白銀レイカ / ウインダム (Reika Shirogane / Windom)</h4>
+                            <p>一個看似嚴肅的人，實際上是一個BL（男男）同人女。玲花在閱讀BL漫畫時獲得了她的怪獸形態。她在《怪獸少女》中的角色在嚴肅和幽默之間提供了平衡，在團隊內創造了有趣的動態。玲花獨特的個性為《怪獸少女》的敘事增添了深度。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>ゼットン (Zetton)</h4>
+                            <p>一個神秘的女人，實際上是大怪獸戰鬥比賽的冠軍，也是GIRLS最強的學員。在《怪獸少女》中，傑頓認為艾琪與她的過去相似，創造了一種導師與學生的關係，為故事增添了情感深度。她的角色代表了力量、經驗和從克服挑戰中獲得的智慧。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>ピグモン (Pigmon)</h4>
+                            <p>《怪獸少女》中GIRLS的主要偶像，她介紹了靈魂變身器（Soulrizer），允許擁有超人力霸王怪獸精神的少女變身。皮格蒙在《怪獸少女》的世界中扮演著關鍵角色，既是新人成員的嚮導，也是靈感來源。她的角色體現了希望和轉變的潛力。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>レッドキング (Red King)</h4>
+                            <p>大怪獸戰鬥中最強的戰士之一。儘管她實力強大，但紅王在《怪獸少女》中也對可愛的事物有親和力。她通常追捕那些因不使用靈魂變身器而變身失控的怪獸少女。她的角色為《怪獸少女》的世界增添了複雜性，表明力量和溫柔可以共存。</p>
+                        </div>
+                    </div>
+                    
+                    <h3>其他角色</h3>
+                    <p>《怪獸少女》還擁有豐富的配角陣容，包括艾雷王（Eleking）、哥莫拉（Gomora）、贊多利亞斯（Zandrias）等。每個角色在《怪獸少女》中都為遊戲豐富的敘事和世界構建做出貢獻，為玩家創造了生動而引人入勝的體驗。</p>
+                </div>
+
+                <!-- Gameplay Guide -->
+                <div class="guide-section">
+                    <h2>遊戲玩法指南</h2>
+                    <p>《怪獸少女》是一款結合精美立繪與豐富敘事的沉浸式視覺小說遊戲。以下是一份完整的指南，幫助您開始並充分利用您在《怪獸少女》中的體驗。</p>
+                    
+                    <h3>如何遊玩《怪獸少女》</h3>
+                    <ul class="gameplay-steps">
+                        <li>
+                            <strong>1. 閱讀故事</strong>
+                            《怪獸少女》遵循視覺小說格式，您將閱讀故事，體驗精美插圖的場景和角色互動。《怪獸少女》中的敘事通過精心製作的對話和精美的藝術作品展開，將世界栩栩如生地呈現。
+                        </li>
+                        <li>
+                            <strong>2. 做出選擇</strong>
+                            在《怪獸少女》中，您會遇到影響故事進程的決策點。您在《怪獸少女》中的選擇可能導致不同的故事路徑、角色關係，最終導致不同的結局。仔細思考您在《怪獸少女》中的決定，因為它們塑造了您獨特的體驗。
+                        </li>
+                        <li>
+                            <strong>3. 探索不同路徑</strong>
+                            《怪獸少女》擁有多條分支故事線，鼓勵多次遊戲。每條路徑在《怪獸少女》中揭示故事和角色關係的不同方面。重複遊玩《怪獸少女》以發現所有可能的結果和結局。
+                        </li>
+                        <li>
+                            <strong>4. 使用導演版功能</strong>
+                            《怪獸少女》包含獨特的「導演版」切換功能，允許您在不同CG變體之間切換。通過《怪獸少女》的遊戲設置訪問此功能，以體驗某些場景的原始構想。《怪獸少女》中的此功能增強了可重玩性並提供了額外內容。
+                        </li>
+                        <li>
+                            <strong>5. 享受配音</strong>
+                            《怪獸少女》擁有完整的中日雙語配音。專業的配音表演在《怪獸少女》中以真實的情感為角色注入生命。您可以在《怪獸少女》中調整語言設置，以您首選的語言享受配音。
+                        </li>
+                        <li>
+                            <strong>6. 沉浸在音樂中</strong>
+                            《怪獸少女》中的原創音樂增強了情感時刻，並在整個故事中營造氛圍。《怪獸少女》中的音樂配樂旨在讓玩家完全沉浸在遊戲世界中，補充敘事和視覺元素。
+                        </li>
+                    </ul>
+                    
+                    <h3>遊玩《怪獸少女》的提示</h3>
+                    <p>為了充分利用您的《怪獸少女》體驗：</p>
+                    <ul class="gameplay-steps">
+                        <li>花時間仔細閱讀《怪獸少女》中的故事 - 敘事豐富而詳細。</li>
+                        <li>在《怪獸少女》中頻繁保存遊戲，以探索不同的選擇路徑。</li>
+                        <li>注意《怪獸少女》中的角色互動 - 它們揭示了重要的故事元素。</li>
+                        <li>嘗試《怪獸少女》中的導演版功能，查看不同的CG變體。</li>
+                        <li>多次重複遊玩《怪獸少女》，以發現所有結局和故事路徑。</li>
+                    </ul>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="guide-section">
+                    <h2>系統要求</h2>
+                    <p>為了確保遊玩《怪獸少女》的最佳體驗，請檢查您的系統是否滿足以下要求：</p>
+                    
+                    <table class="requirements-table">
+                        <thead>
+                            <tr>
+                                <th>組件</th>
+                                <th>最低要求</th>
+                                <th>推薦要求</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>操作系統</strong></td>
+                                <td>Windows 7/8/10/11 (64位)</td>
+                                <td>Windows 10/11 (64位)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>處理器</strong></td>
+                                <td>Intel Core i3 或同等級</td>
+                                <td>Intel Core i5 或同等級</td>
+                            </tr>
+                            <tr>
+                                <td><strong>記憶體</strong></td>
+                                <td>4 GB RAM</td>
+                                <td>8 GB RAM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>顯卡</strong></td>
+                                <td>DirectX 11 兼容顯卡</td>
+                                <td>DirectX 11 兼容顯卡，2GB VRAM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>存儲空間</strong></td>
+                                <td>5 GB 可用空間</td>
+                                <td>10 GB 可用空間</td>
+                            </tr>
+                            <tr>
+                                <td><strong>音效卡</strong></td>
+                                <td>DirectX 兼容音效卡</td>
+                                <td>DirectX 兼容音效卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>其他說明</strong></td>
+                                <td colspan="2">首次激活需要網絡連接。《怪獸少女》支持多種語言，包括英語、中文（簡體和繁體）和日語。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Development Team -->
+                <div class="guide-section">
+                    <h2>開發團隊</h2>
+                    <p>《怪獸少女》開發團隊致力於提供高品質的視覺小說體驗。團隊不遺餘力地為您帶來精美的藝術作品、引人入勝的敘事和創新的功能。</p>
+                    
+                    <div class="team-member">
+                        <h4>鴉醬老師 (Karasu-chan)</h4>
+                        <p>《怪獸少女》的首席藝術家和角色設計師。鴉醬老師負責精美的角色立繪和故事CG，這些作品使《怪獸少女》栩栩如生。《怪獸少女》中的「導演版」功能允許玩家體驗鴉醬老師對遊戲視覺內容的原始構想。鴉醬老師對創作卓越藝術作品的奉獻精神在《怪獸少女》中隨處可見。</p>
+                    </div>
+                    
+                    <h3>開發理念</h3>
+                    <p>《怪獸少女》開發團隊相信創造沉浸式和情感豐富的體驗。《怪獸少女》的每個方面，從藝術作品到音樂再到配音，都經過精心製作，注重細節。團隊對品質的承諾體現在擴展遊戲內容的決定中，包括更多藝術作品、動態效果、擴展的故事事件、雙語配音和原創音樂製作。</p>
+                    
+                    <p>《怪獸少女》的開發是一項充滿愛的工作，團隊努力確保遊戲的每個元素都達到最高標準。推遲發布日期的決定是為了確保《怪獸少女》提供玩家應得的精緻和難忘的體驗。</p>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="guide-section">
+                    <h2>其他資訊</h2>
+                    <h3>語言支持</h3>
+                    <p>《怪獸少女》擁有全面的語言支持，包括：</p>
+                    <ul class="gameplay-steps">
+                        <li>完整的中日雙語配音</li>
+                        <li>界面和文本支持英語、中文（簡體和繁體）和日語</li>
+                        <li>可在遊戲菜單中調整語言設置</li>
+                    </ul>
+                    
+                    <h3>試玩版</h3>
+                    <p>《怪獸少女》的試玩版目前正在開發中，將在2026年3月20日完整遊戲發布之前發布。試玩版將允許玩家體驗《怪獸少女》的一部分，並體驗遊戲的藝術作品、敘事和遊戲玩法機制。</p>
+                    
+                    <h3>預購</h3>
+                    <p>《怪獸少女》的預購將在接近2026年3月20日發布日期時開放。請關注官方網站和社交媒體頻道，以獲取有關預購可用性、定價以及可能包含在《怪獸少女》預購中的任何特殊獎勵的公告。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="../static/logo.png" alt="怪獸少女 Logo">
+                        <span class="logo-text">怪獸少女</span>
+                    </div>
+                    <p>在《怪獸少女》中體驗沉浸式視覺小說冒險。探索精美立繪、豐富劇情和難忘角色，感受這款引人入勝的遊戲。</p>
+                </div>
+                <div class="footer-links">
+                    <h3>導航</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="news.html">新聞</a></li>
+                        <li><a href="media.html">媒體</a></li>
+                        <li><a href="guides.html">攻略</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>法律</h3>
+                    <ul>
+                        <li><a href="../privacy-policy">隱私政策</a></li>
+                        <li><a href="../terms-of-service">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 怪獸少女。版權所有。| 在《怪獸少女》中體驗沉浸式視覺小說冒險。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+            });
+        }
+
+        if (closeMenu) {
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.character-card, .guide-section, .team-member').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+    <script src="../static/base.js"></script>
+</body>
+</html>
+

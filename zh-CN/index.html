@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪獸少女 - 視覺小說遊戲 | 官方網站</title>
+    <meta name="description" content="怪獸少女將於2026年3月20日發售！體驗沉浸式視覺小說遊戲，擁有精美立繪、動態CG、中日雙語配音和豐富的分支劇情。探索怪獸少女的世界，展開難忘的冒險之旅。">
+    <meta name="keywords" content="怪獸少女, 怪獸少女遊戲, 怪獸少女2026, 怪獸少女發售日期, 視覺小說遊戲, 怪獸少女視覺小說, 怪獸少女角色, 怪獸少女故事, 怪獸少女立繪, 怪獸少女cg, 怪獸少女配音, 怪獸少女試玩版, 怪獸少女2026年3月">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaijugirls.com/zh-CN/">
+    <meta property="og:title" content="怪獸少女 - 視覺小說遊戲">
+    <meta property="og:description" content="怪獸少女將於2026年3月20日發售！體驗沉浸式視覺小說，擁有精美立繪、動態CG和豐富的分支劇情。">
+    <meta property="og:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="怪獸少女 - 視覺小說遊戲">
+    <meta name="twitter:description" content="體驗怪獸少女，一款沉浸式視覺小說，擁有精美立繪、動態CG和豐富的分支劇情。2026年3月20日發售。">
+    <meta name="twitter:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <link rel="apple-touch-icon" href="../static/logo.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="ee9f27884397bc6d" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://kaijugirls.com/zh-CN/">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDFZLSQVMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDFZLSQVMZ');
+    </script>
+
+    <style>
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)), url('../static/images/media/1.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--secondary-color);
+            padding: 200px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(10, 26, 46, 0.3), rgba(22, 33, 62, 0.2));
+            z-index: 1;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(0, 212, 255, 0.1) 50%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+            z-index: 3;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--secondary-color);
+            position: relative;
+            z-index: 4;
+        }
+
+        .hero .subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            color: var(--light-accent);
+            position: relative;
+            z-index: 4;
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            background: transparent;
+            padding: 3rem;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: none;
+            border: none;
+            backdrop-filter: none;
+            position: relative;
+            z-index: 4;
+        }
+
+        .countdown-container h2 {
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        .countdown {
+            display: flex;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .countdown-item {
+            text-align: center;
+            min-width: 120px;
+            position: relative;
+        }
+
+        .countdown-item:not(:last-child)::after {
+            content: ':';
+            position: absolute;
+            right: -1.8rem;
+            top: 50%;
+            transform: translateY(-60%);
+            color: #ffffff;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 1), 0 0 30px rgba(0, 212, 255, 0.5);
+        }
+
+        .countdown-item span {
+            font-size: 4rem;
+            font-weight: 900;
+            display: block;
+            color: #ffffff;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 1), 0 0 30px rgba(0, 212, 255, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.9);
+            font-family: 'Courier New', monospace;
+            background: transparent;
+            border-radius: 10px;
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.5rem;
+            border: none;
+            box-shadow: none;
+        }
+
+        .countdown-item label {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            letter-spacing: 2px;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Game Introduction */
+        .introduction {
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+            padding: 5rem 0;
+        }
+
+        .video-container {
+            margin: 3rem auto;
+            max-width: 900px;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+
+        .game-info {
+            margin-top: 3rem;
+            text-align: left;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .game-info h3, .game-info h4 {
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .game-info h3 {
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .game-info h4 {
+            font-size: 1.4rem;
+            color: var(--accent-color);
+        }
+
+        /* Features Section */
+        .features {
+            background: linear-gradient(135deg, rgba(20, 40, 60, 0.6), rgba(40, 70, 90, 0.4)),
+                        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1), transparent);
+            padding: 5rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--secondary-color);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .feature-card h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Screenshots Gallery */
+        .screenshots {
+            background: var(--secondary-color);
+            padding: 5rem 0;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .screenshot-item {
+            position: relative;
+            cursor: pointer;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .screenshot-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .screenshot-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: brightness(1.1) saturate(1.1) contrast(1.1);
+        }
+
+        .screenshot-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            animation: fadeIn 0.3s;
+        }
+
+        .lightbox.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            margin: auto;
+            max-width: 90%;
+            max-height: 90%;
+            animation: zoomIn 0.3s;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: var(--secondary-color);
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            color: var(--accent-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: linear-gradient(135deg, rgba(30, 50, 70, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1), transparent);
+            padding: 5rem 0;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 3rem auto;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--secondary-color);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: var(--gradient-primary);
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .faq-question:hover {
+            background: var(--gradient-secondary);
+            color: #ffffff;
+        }
+
+        .faq-answer {
+            padding: 1.5rem;
+            display: none;
+            line-height: 1.7;
+            color: #ffffff;
+            background: rgba(22, 33, 62, 0.5);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(10, 26, 46, 0.98);
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 60px 0 0 0;
+        }
+
+        .mobile-menu ul li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .mobile-menu ul li a {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .mobile-menu ul li a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .close-menu {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: none;
+            border: none;
+            color: var(--secondary-color);
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--menu-bg);
+            min-width: 200px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            width: 100%;
+        }
+
+        .dropdown-menu li a {
+            display: block;
+            padding: 1rem 1.2rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dropdown-menu li a:hover {
+            background: rgba(0, 212, 255, 0.3);
+            color: var(--accent-color);
+        }
+
+        .dropdown-menu li:last-child a {
+            border-bottom: none;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                background-attachment: scroll;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.3rem;
+            }
+
+            .countdown {
+                gap: 1.5rem;
+            }
+
+            .countdown-item {
+                min-width: 80px;
+            }
+
+            .countdown-item span {
+                font-size: 2.5rem;
+            }
+
+            .countdown-item:not(:last-child)::after {
+                right: -1rem;
+                font-size: 2rem;
+            }
+
+            .countdown-item label {
+                font-size: 0.9rem;
+            }
+
+            .countdown-container {
+                padding: 2rem;
+            }
+
+            .countdown-container h2 {
+                font-size: 1.5rem;
+            }
+
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                background: transparent;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 150px 0 80px;
+                background-attachment: scroll;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .countdown {
+                gap: 1rem;
+            }
+
+            .countdown-item {
+                min-width: 60px;
+            }
+
+            .countdown-item span {
+                font-size: 2rem;
+            }
+
+            .countdown-item label {
+                font-size: 0.8rem;
+            }
+
+            .countdown-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="../static/logo.png" alt="怪獸少女 Logo">
+                    <span class="logo-text">怪獸少女</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html" class="active">首頁</a></li>
+                    <li><a href="news.html">新聞</a></li>
+                    <li><a href="media.html">媒體</a></li>
+                    <li><a href="guides.html">攻略</a></li>
+                    <li class="language-selector" style="position: relative;">
+                        <select id="language-select" onchange="changeLanguage(this.value)" style="background: rgba(10, 26, 46, 0.8); border: 2px solid var(--accent-color); color: var(--accent-color); padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                            <option value="/">English</option>
+                            <option value="/zh-CN/">中文</option>
+                            <option value="/ja-JP/">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="news.html">新聞</a></li>
+                <li><a href="media.html">媒體</a></li>
+                <li><a href="guides.html">攻略</a></li>
+                <li><a href="../">English</a></li>
+                <li><a href="index.html">中文</a></li>
+                <li><a href="../ja-JP/">日本語</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>怪獸少女</h1>
+                <p class="subtitle">沉浸式視覺小說冒險</p>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--light-accent);">即將推出：2026年3月20日</p>
+                <div class="countdown-container">
+                    <h2>正式發售倒計時 - 2026年3月20日</h2>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <label>天</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <label>時</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <label>分</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <label>秒</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Introduction -->
+        <section class="introduction">
+            <div class="container">
+                <h2>Experience Kaiju Girls - An Immersive Visual Novel Adventure</h2>
+                <p><strong>Kaiju Girls</strong> is set to launch on <strong>March 20, 2026</strong>, bringing players an extraordinary visual novel experience featuring stunning artwork, dynamic CGs, dual-language voice acting, and rich branching storylines. <strong>Kaiju Girls</strong> combines beautiful character illustrations with compelling narratives, creating an unforgettable journey through a world where choices matter and every decision shapes your story. The highly anticipated release of <strong>Kaiju Girls</strong> on March 20, 2026 marks a new chapter in visual novel gaming, offering players an immersive experience with multiple endings and deep character interactions. <strong>Kaiju Girls</strong> delivers exceptional storytelling that will captivate both visual novel enthusiasts and newcomers to the genre.</p>
+                
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J7s8SAgcRYo?si=4wgOmXPpGwNXe9Y9" title="Kaiju Girls Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                <div class="game-info">
+                    <h3>About Kaiju Girls</h3>
+                    <p><strong>Kaiju Girls</strong> is an immersive visual novel game that combines stunning artwork with rich storytelling. The game features beautifully illustrated characters, dynamic CGs, and a branching narrative system where your choices determine the outcome of the story. <strong>Kaiju Girls</strong> offers players a deeply engaging experience with multiple story paths, character interactions, and meaningful decisions that affect the game's progression. The world of <strong>Kaiju Girls</strong> is brought to life through exceptional visual design and compelling narratives that will keep players engaged from start to finish.</p>
+                    
+                    <h4>Story & Background</h4>
+                    <p>In <strong>Kaiju Girls</strong>, players embark on an emotional journey through a beautifully crafted world. The game features a rich narrative with multiple branching storylines, allowing players to explore different paths and discover various endings based on their choices. Each character in <strong>Kaiju Girls</strong> has a unique personality and backstory, creating deep connections and meaningful interactions throughout the game. The story of <strong>Kaiju Girls</strong> unfolds through carefully crafted dialogue, beautiful artwork, and immersive storytelling that draws players into its captivating world.</p>
+                    
+                    <h4>Release Information</h4>
+                    <p><strong>Kaiju Girls</strong> is scheduled for official release on <strong>March 20, 2026</strong>. The game will be available on PC platforms including Steam and other digital distribution services. The development team is working tirelessly to ensure <strong>Kaiju Girls</strong> delivers a polished and memorable experience when it launches. A demo version of <strong>Kaiju Girls</strong> is currently in development, allowing players to experience a portion of the game before the full release. Pre-orders for <strong>Kaiju Girls</strong> will be available closer to the March 20, 2026 release date.</p>
+                    
+                    <h4>Supported Languages</h4>
+                    <p><strong>Kaiju Girls</strong> features full voice acting in both Chinese and Japanese, ensuring authentic character performances and emotional storytelling. The game's interface and text will support multiple languages including English, Chinese (Simplified & Traditional), and Japanese, making <strong>Kaiju Girls</strong> accessible to a global audience. The comprehensive language support in <strong>Kaiju Girls</strong> allows players worldwide to fully enjoy the game's rich narrative and character interactions in their preferred language.</p>
+                </div>
+            </div>
+        </section>
+        <script async="async" data-cfasync="false" src="//pl28136434.effectivegatecpm.com/e946f08f3aed55e5425fe4ac5eb0477b/invoke.js"></script>
+        <div id="container-e946f08f3aed55e5425fe4ac5eb0477b"></div>
+        <!-- How to Play -->
+        <section class="features">
+            <div class="container">
+                <h2>Game Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Stunning Artwork & CGs</h3>
+                        <p><strong>Kaiju Girls</strong> features exquisitely crafted character illustrations and story CGs that bring the game's world to life. Each scene in <strong>Kaiju Girls</strong> is beautifully rendered with attention to detail, creating a visually stunning experience. The artwork in <strong>Kaiju Girls</strong> captures the essence of each character and moment, enhancing the emotional impact of the story. Players will be captivated by the high-quality visuals throughout their journey in <strong>Kaiju Girls</strong>.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Dynamic Effects & Director's Cut</h3>
+                        <p><strong>Kaiju Girls</strong> includes dynamic illustrations and CGs that make the visuals truly come alive. The game features a "Director's Cut" toggle function, allowing players to switch between different CG variations and experience the original vision for <strong>Kaiju Girls</strong>. This feature in <strong>Kaiju Girls</strong> provides players with additional content and different perspectives on key story moments, enhancing replayability and immersion.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Rich Story Events</h3>
+                        <p><strong>Kaiju Girls</strong> offers an immersive narrative with multiple branching storylines and compelling events. Your choices in <strong>Kaiju Girls</strong> can lead to different endings, providing rich gameplay and narrative depth. The story events in <strong>Kaiju Girls</strong> are carefully crafted to create emotional connections and meaningful player experiences. Each playthrough of <strong>Kaiju Girls</strong> can reveal new story elements and character interactions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Dual-Language Voice Acting</h3>
+                        <p><strong>Kaiju Girls</strong> features full voice acting in both Chinese and Japanese, ensuring authentic character performances. The voice acting in <strong>Kaiju Girls</strong> brings characters to life with genuine emotions and expressions, enhancing the storytelling experience. Players can enjoy <strong>Kaiju Girls</strong> with professional voice performances that add depth and personality to every character interaction.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Original Music Production</h3>
+                        <p><strong>Kaiju Girls</strong> includes original music of the highest quality, designed to fully immerse players in the game's world. The musical score in <strong>Kaiju Girls</strong> enhances emotional moments and creates atmosphere throughout the story. The original compositions in <strong>Kaiju Girls</strong> are crafted to complement the narrative and visual elements, creating a cohesive and engaging experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Multiple Endings</h3>
+                        <p>Your decisions in <strong>Kaiju Girls</strong> shape the story and lead to different endings based on your choices. The branching narrative system in <strong>Kaiju Girls</strong> encourages multiple playthroughs to discover all possible outcomes. Each ending in <strong>Kaiju Girls</strong> offers unique perspectives and resolutions, rewarding players for exploring different story paths and character relationships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Screenshots -->
+        <section class="screenshots">
+            <div class="container">
+                <h2>Kaiju Girls Game Gallery</h2>
+                <p style="text-align: center; color: var(--text-color); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">Explore stunning visuals from <strong>Kaiju Girls</strong>, showcasing the beautiful artwork, character illustrations, and dynamic CGs that await you when the game launches on March 20, 2026. These screenshots capture the essence of what makes <strong>Kaiju Girls</strong> a remarkable visual novel experience with exceptional art quality and immersive storytelling.</p>
+                <div class="screenshot-grid">
+                    <div class="screenshot-item" data-src="../static/images/media/1.jpeg">
+                        <img src="../static/images/media/1.jpeg" alt="怪獸少女精美角色立繪和視覺小說場景">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/2.jpeg">
+                        <img src="../static/images/media/2.jpeg" alt="怪獸少女精美CG立繪展示遊戲視覺品質">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/3.jpeg">
+                        <img src="../static/images/media/3.jpeg" alt="怪獸少女角色插圖和故事場景">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/4.jpeg">
+                        <img src="../static/images/media/4.jpeg" alt="怪獸少女動態CG和視覺小說玩法">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/scl59y.jpg">
+                        <img src="../static/images/media/scl59y.jpg" alt="怪獸少女精美立繪和角色設計">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/scl59z.jpg">
+                        <img src="../static/images/media/scl59z.jpg" alt="怪獸少女精美視覺小說場景和立繪">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/scl5a8.jpg">
+                        <img src="../static/images/media/scl5a8.jpg" alt="怪獸少女角色CG和故事插圖">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/scl5ad.jpg">
+                        <img src="../static/images/media/scl5ad.jpg" alt="怪獸少女精美角色立繪和場景">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/scl5af.jpg">
+                        <img src="../static/images/media/scl5af.jpg" alt="怪獸少女動態CG和視覺敘事">
+                    </div>
+                    <div class="screenshot-item" data-src="../static/images/media/scl5ah.jpg">
+                        <img src="../static/images/media/scl5ah.jpg" alt="怪獸少女精美立繪展示遊戲視覺品質">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="">
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions About Kaiju Girls</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">What is Kaiju Girls and when will it be released?</div>
+                        <div class="faq-answer"><strong>Kaiju Girls</strong> is an immersive visual novel game featuring stunning artwork, dynamic CGs, dual-language voice acting, and rich branching storylines. The game is scheduled for official release on <strong>March 20, 2026</strong> and will be available on PC platforms including Steam. <strong>Kaiju Girls</strong> offers players a deeply engaging narrative experience with multiple endings based on their choices. The March 20, 2026 release of <strong>Kaiju Girls</strong> marks an exciting milestone for visual novel enthusiasts.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What platforms will Kaiju Girls be available on?</div>
+                        <div class="faq-answer">When <strong>Kaiju Girls</strong> launches on <strong>March 20, 2026</strong>, it will be available on PC platforms including Steam and other digital distribution services. The development team is focused on delivering the best possible experience for PC players, ensuring <strong>Kaiju Girls</strong> runs smoothly on a wide range of systems. Future platform releases for <strong>Kaiju Girls</strong> may be considered based on community feedback and demand.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What languages does Kaiju Girls support?</div>
+                        <div class="faq-answer"><strong>Kaiju Girls</strong> features full voice acting in both Chinese and Japanese, providing authentic character performances. The game's interface and text support multiple languages including English, Chinese (Simplified & Traditional), and Japanese. This comprehensive language support in <strong>Kaiju Girls</strong> ensures players worldwide can fully enjoy the game's rich narrative and character interactions in their preferred language.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What makes Kaiju Girls different from other visual novels?</div>
+                        <div class="faq-answer"><strong>Kaiju Girls</strong> stands out with its exceptional artwork quality, dynamic CGs, and "Director's Cut" feature that allows players to experience different CG variations. The game features full dual-language voice acting, original music production, and multiple branching storylines with different endings. The combination of stunning visuals, professional voice acting, and rich storytelling in <strong>Kaiju Girls</strong> creates an immersive experience that sets it apart from other visual novels.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Will there be a demo version of Kaiju Girls?</div>
+                        <div class="faq-answer">Yes! A demo version of <strong>Kaiju Girls</strong> is currently in development and will be released before the full game launch. The demo will allow players to experience a portion of <strong>Kaiju Girls</strong> and get a taste of the game's artwork, storytelling, and gameplay mechanics. The demo for <strong>Kaiju Girls</strong> will be available on the same platforms as the full release, giving players an opportunity to try the game before purchasing.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How many endings does Kaiju Girls have?</div>
+                        <div class="faq-answer"><strong>Kaiju Girls</strong> features multiple endings based on player choices throughout the story. The branching narrative system in <strong>Kaiju Girls</strong> encourages multiple playthroughs to discover all possible outcomes. Each ending in <strong>Kaiju Girls</strong> offers unique perspectives and resolutions, rewarding players for exploring different story paths and character relationships. The number of endings in <strong>Kaiju Girls</strong> will be revealed closer to the release date.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the "Director's Cut" feature in Kaiju Girls?</div>
+                        <div class="faq-answer">The "Director's Cut" feature in <strong>Kaiju Girls</strong> allows players to toggle between different CG variations, experiencing the original vision for certain scenes. This feature in <strong>Kaiju Girls</strong> provides additional content and different perspectives on key story moments, enhancing replayability. Players can access the "Director's Cut" feature through the game settings in <strong>Kaiju Girls</strong>, allowing them to switch between standard and director's cut versions of CGs.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Can I pre-order Kaiju Girls?</div>
+                        <div class="faq-answer">Pre-orders for <strong>Kaiju Girls</strong> will be available closer to the March 20, 2026 release date. Players interested in pre-ordering <strong>Kaiju Girls</strong> should stay tuned to the official website and social media channels for announcements about pre-order availability, pricing, and any special bonuses that may be included with pre-orders of <strong>Kaiju Girls</strong>.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="../static/logo.png" alt="怪獸少女 Logo">
+                        <span class="logo-text">怪獸少女</span>
+                    </div>
+                    <p>在怪獸少女中體驗沉浸式視覺小說冒險。探索精美立繪、豐富劇情和難忘角色，感受這款引人入勝的遊戲。</p>
+                </div>
+                <div class="footer-links">
+                    <h3>導航</h3>
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="news.html">新聞</a></li>
+                        <li><a href="media.html">媒體</a></li>
+                        <li><a href="guides.html">攻略</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>法律</h3>
+                    <ul>
+                        <li><a href="../privacy-policy">隱私政策</a></li>
+                        <li><a href="../terms-of-service">服務條款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 怪獸少女。版權所有。| 在怪獸少女中體驗沉浸式視覺小說冒險。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer - March 20, 2026
+        const countDownDate = new Date("March 20, 2026 00:00:00").getTime();
+
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.querySelector(".countdown").innerHTML = "<div style='font-size: 2rem; color: var(--accent-color); font-weight: bold;'>KAIJU GIRLS LAUNCHED!</div>";
+            }
+        }, 1000);
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.feature-card, .faq-item, .screenshot-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.querySelector('.lightbox-close');
+        const screenshotItems = document.querySelectorAll('.screenshot-item');
+
+        screenshotItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.getAttribute('data-src');
+                lightboxImg.src = imgSrc;
+                lightboxImg.alt = item.querySelector('img').alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+    </script>
+    <script src="../static/base.js"></script>
+</body>
+</html>

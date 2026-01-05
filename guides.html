@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiju Girls Guides - Story, Characters & Gameplay Guide</title>
+    <meta name="description" content="Complete guide to Kaiju Girls visual novel game. Learn about the story, characters, gameplay mechanics, system requirements, and development team. Your comprehensive resource for everything Kaiju Girls.">
+    <meta name="keywords" content="kaiju girls guide, kaiju girls characters, kaiju girls story, kaiju girls gameplay, kaiju girls walkthrough, kaiju girls system requirements, kaiju girls characters guide">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaijugirls.com/guides">
+    <meta property="og:title" content="Kaiju Girls Guides - Story, Characters & Gameplay Guide">
+    <meta property="og:description" content="Complete guide to Kaiju Girls visual novel game. Learn about the story, characters, and gameplay mechanics.">
+    <meta property="og:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kaiju Girls Guides - Story, Characters & Gameplay Guide">
+    <meta name="twitter:description" content="Complete guide to Kaiju Girls visual novel game. Learn about the story, characters, and gameplay mechanics.">
+    <meta name="twitter:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="apple-touch-icon" href="static/logo.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="ee9f27884397bc6d" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://kaijugirls.com/guides">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDFZLSQVMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDFZLSQVMZ');
+    </script>
+    
+    <style>
+        .guides-hero {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)), 
+                        url('static/images/media/3.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .guides-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .guides-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .guides-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .guide-section {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .guide-section h2 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 1rem;
+        }
+
+        .guide-section h3 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-section p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .character-card {
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .character-card h4 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .character-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .requirements-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .requirements-table th,
+        .requirements-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .requirements-table th {
+            background: var(--gradient-primary);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .requirements-table td {
+            color: var(--text-color);
+        }
+
+        .requirements-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .team-member {
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .team-member h4 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .gameplay-steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .gameplay-steps li {
+            background: rgba(22, 33, 62, 0.6);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .gameplay-steps li strong {
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .guides-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .guide-section {
+                padding: 2rem;
+            }
+
+            .guide-section h2 {
+                font-size: 2rem;
+            }
+
+            .character-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .requirements-table {
+                font-size: 0.9rem;
+            }
+
+            .requirements-table th,
+            .requirements-table td {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="static/logo.png" alt="Kaiju Girls Logo">
+                    
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/media">Media</a></li>
+                    <li><a href="/guides" class="active">Guides</a></li>
+                    <li class="language-selector" style="position: relative;">
+                        <select id="language-select" onchange="changeLanguage(this.value)" style="background: rgba(10, 26, 46, 0.8); border: 2px solid var(--accent-color); color: var(--accent-color); padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                            <option value="/">English</option>
+                            <option value="/zh-CN/">中文</option>
+                            <option value="/ja-JP/">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/">English</a></li>
+                <li><a href="/zh-CN/">中文</a></li>
+                <li><a href="/ja-JP/">日本語</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <script async="async" data-cfasync="false" src="//pl28136434.effectivegatecpm.com/e946f08f3aed55e5425fe4ac5eb0477b/invoke.js"></script>
+        <div id="container-e946f08f3aed55e5425fe4ac5eb0477b"></div>
+        
+        <!-- Guides Hero -->
+        <section class="guides-hero">
+            <div class="container">
+                <h1>GAME GUIDES</h1>
+                <p>Your complete guide to Kaiju Girls - Learn about the story, characters, gameplay, and everything you need to know about this immersive visual novel adventure.</p>
+            </div>
+        </section>
+
+        <!-- Guides Content -->
+        <section class="guides-content">
+            <div class="container">
+                <!-- Story & Background -->
+                <div class="guide-section">
+                    <h2>Story & World Background</h2>
+                    <p><strong>Kaiju Girls</strong> is set in a world where years have passed since the battle between the human race and the monsters has ended, and a new era of peace has begun. In the present day, girls who contain the souls of past monsters have appeared and possess the ability to summon their inner monster forms. These special individuals are known as <strong>Kaiju Girls</strong> (怪獣娘, Kaijū Musume).</p>
+                    
+                    <p>An organization called <strong>GIRLS</strong> has formed to collect and protect these Kaiju Girls. The story of <strong>Kaiju Girls</strong> focuses on the GIRLS rookie members and their adventures in this new world. Players will experience an emotional journey through a beautifully crafted world, where choices matter and every decision shapes the story's outcome.</p>
+                    
+                    <h3>The World of Kaiju Girls</h3>
+                    <p>The world of <strong>Kaiju Girls</strong> is a place where the past and present intersect. The remnants of ancient battles between humans and monsters have given way to a peaceful era, but the legacy of those conflicts lives on in the form of Kaiju Girls. These girls carry the spirits of legendary monsters within them, granting them extraordinary abilities and the power to transform into their monster forms.</p>
+                    
+                    <p>The <strong>GIRLS</strong> organization serves as both a sanctuary and training ground for these special individuals. Through the organization, Kaiju Girls learn to control their powers, understand their heritage, and navigate the complexities of a world that has moved beyond the conflicts of the past. The story of <strong>Kaiju Girls</strong> explores themes of identity, belonging, and the bonds that form between these unique individuals.</p>
+                </div>
+
+                <!-- Characters -->
+                <div class="guide-section">
+                    <h2>Characters</h2>
+                    <p>The world of <strong>Kaiju Girls</strong> is populated by a diverse cast of characters, each with their own unique personality, background, and abilities. The main characters are composed of three rookie members of GIRLS, all 16 years old and based on Ultraseven's Capsule Monsters.</p>
+                    
+                    <div class="character-grid">
+                        <div class="character-card">
+                            <h4>Aki Miyashita / Agira</h4>
+                            <p>The main viewpoint character of <strong>Kaiju Girls</strong>, Aki is timid among the trio. She was chosen as the main character due to her interesting situation of being "sandwiched" between energetic and calm characters. Aki is the last to transform into her Kaiju form, which she acquired while saving a kindergartener from a car. Her journey in <strong>Kaiju Girls</strong> represents growth, courage, and discovering one's inner strength.</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>Miku Ushimaru / Miclas</h4>
+                            <p>The most energetic member of the team in <strong>Kaiju Girls</strong>, Miku is a fan of Great Monster Fight. She is the first to acquire her Kaiju form due to her admiration for Red King. Miku's enthusiasm and passion drive much of the team's adventures in <strong>Kaiju Girls</strong>. Her character brings energy and excitement to the story, making her a beloved member of the <strong>Kaiju Girls</strong> cast.</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>Reika Shirogane / Windom</h4>
+                            <p>A no-nonsense person who, in reality, is a yaoi fangirl. Reika acquired her Kaiju form when reading a yaoi manga. Her character in <strong>Kaiju Girls</strong> provides a balance between seriousness and humor, creating interesting dynamics within the team. Reika's unique personality adds depth to the <strong>Kaiju Girls</strong> narrative.</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>Zetton</h4>
+                            <p>A mysterious woman who is actually the champion of Great Monster Fight matches and is GIRLS' strongest cadet. In <strong>Kaiju Girls</strong>, Zetton views Agira as being similar to her past, creating a mentor-student relationship that adds emotional depth to the story. Her character represents strength, experience, and the wisdom that comes from overcoming challenges.</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>Pigmon</h4>
+                            <p>GIRLS' main idol in <strong>Kaiju Girls</strong>, who introduced the Soulrizer that allows girls with the spirit of an Ultra Kaiju to transform. Pigmon plays a crucial role in the world of <strong>Kaiju Girls</strong>, serving as both a guide and inspiration for the rookie members. Her character embodies hope and the potential for transformation.</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>Red King</h4>
+                            <p>One of the strongest fighters in the Great Monster Fight. Despite her strength, Red King also has an affinity for cute things in <strong>Kaiju Girls</strong>. She usually hunts for Kaiju Girls that went on a rampage from the effects of transforming without the use of Soulrizer. Her character adds complexity to the <strong>Kaiju Girls</strong> world, showing that strength and gentleness can coexist.</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Other Characters</h3>
+                    <p><strong>Kaiju Girls</strong> features a rich cast of supporting characters including Eleking, Gomora, Zandrias, and others. Each character in <strong>Kaiju Girls</strong> contributes to the game's rich narrative and world-building, creating a vibrant and engaging experience for players.</p>
+                </div>
+
+                <!-- Gameplay Guide -->
+                <div class="guide-section">
+                    <h2>Gameplay Guide</h2>
+                    <p><strong>Kaiju Girls</strong> is an immersive visual novel game that combines stunning artwork with rich storytelling. Here's a comprehensive guide to help you get started and make the most of your experience in <strong>Kaiju Girls</strong>.</p>
+                    
+                    <h3>How to Play Kaiju Girls</h3>
+                    <ul class="gameplay-steps">
+                        <li>
+                            <strong>1. Reading the Story</strong>
+                            <strong>Kaiju Girls</strong> follows a visual novel format where you'll read through the story, experiencing beautifully illustrated scenes and character interactions. The narrative in <strong>Kaiju Girls</strong> unfolds through carefully crafted dialogue and stunning artwork that brings the world to life.
+                        </li>
+                        <li>
+                            <strong>2. Making Choices</strong>
+                            Throughout <strong>Kaiju Girls</strong>, you'll encounter decision points that affect the story's progression. Your choices in <strong>Kaiju Girls</strong> can lead to different story paths, character relationships, and ultimately, different endings. Think carefully about your decisions in <strong>Kaiju Girls</strong> as they shape your unique experience.
+                        </li>
+                        <li>
+                            <strong>3. Exploring Different Paths</strong>
+                            <strong>Kaiju Girls</strong> features multiple branching storylines, encouraging multiple playthroughs. Each path in <strong>Kaiju Girls</strong> reveals different aspects of the story and character relationships. Replay <strong>Kaiju Girls</strong> to discover all possible outcomes and endings.
+                        </li>
+                        <li>
+                            <strong>4. Using the Director's Cut Feature</strong>
+                            <strong>Kaiju Girls</strong> includes a unique "Director's Cut" toggle function that allows you to switch between different CG variations. Access this feature through the game settings in <strong>Kaiju Girls</strong> to experience the original vision for certain scenes. This feature in <strong>Kaiju Girls</strong> enhances replayability and provides additional content.
+                        </li>
+                        <li>
+                            <strong>5. Enjoying Voice Acting</strong>
+                            <strong>Kaiju Girls</strong> features full voice acting in both Chinese and Japanese. The professional voice performances in <strong>Kaiju Girls</strong> bring characters to life with genuine emotions. You can adjust language settings in <strong>Kaiju Girls</strong> to enjoy the voice acting in your preferred language.
+                        </li>
+                        <li>
+                            <strong>6. Immersing in the Music</strong>
+                            The original music in <strong>Kaiju Girls</strong> enhances emotional moments and creates atmosphere throughout the story. The musical score in <strong>Kaiju Girls</strong> is designed to fully immerse players in the game's world, complementing the narrative and visual elements.
+                        </li>
+                    </ul>
+                    
+                    <h3>Tips for Playing Kaiju Girls</h3>
+                    <p>To get the most out of your <strong>Kaiju Girls</strong> experience:</p>
+                    <ul class="gameplay-steps">
+                        <li>Take your time reading through the story in <strong>Kaiju Girls</strong> - the narrative is rich and detailed.</li>
+                        <li>Save your game frequently in <strong>Kaiju Girls</strong> to explore different choice paths.</li>
+                        <li>Pay attention to character interactions in <strong>Kaiju Girls</strong> - they reveal important story elements.</li>
+                        <li>Experiment with the Director's Cut feature in <strong>Kaiju Girls</strong> to see different CG variations.</li>
+                        <li>Replay <strong>Kaiju Girls</strong> multiple times to discover all endings and story paths.</li>
+                    </ul>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="guide-section">
+                    <h2>System Requirements</h2>
+                    <p>To ensure the best experience playing <strong>Kaiju Girls</strong>, please check that your system meets the following requirements:</p>
+                    
+                    <table class="requirements-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Minimum Requirements</th>
+                                <th>Recommended Requirements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>OS</strong></td>
+                                <td>Windows 7/8/10/11 (64-bit)</td>
+                                <td>Windows 10/11 (64-bit)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Processor</strong></td>
+                                <td>Intel Core i3 or equivalent</td>
+                                <td>Intel Core i5 or equivalent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Memory</strong></td>
+                                <td>4 GB RAM</td>
+                                <td>8 GB RAM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Graphics</strong></td>
+                                <td>DirectX 11 compatible graphics card</td>
+                                <td>DirectX 11 compatible graphics card with 2GB VRAM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Storage</strong></td>
+                                <td>5 GB available space</td>
+                                <td>10 GB available space</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sound Card</strong></td>
+                                <td>DirectX compatible sound card</td>
+                                <td>DirectX compatible sound card</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Additional Notes</strong></td>
+                                <td colspan="2">Internet connection required for initial activation. <strong>Kaiju Girls</strong> supports multiple languages including English, Chinese (Simplified & Traditional), and Japanese.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Development Team -->
+                <div class="guide-section">
+                    <h2>Development Team</h2>
+                    <p>The <strong>Kaiju Girls</strong> development team is committed to delivering a high-quality visual novel experience. The team works tirelessly to bring you stunning artwork, compelling narratives, and innovative features in <strong>Kaiju Girls</strong>.</p>
+                    
+                    <div class="team-member">
+                        <h4>Karasu-chan (鴉醬老師)</h4>
+                        <p>Lead artist and character designer for <strong>Kaiju Girls</strong>. Karasu-chan is responsible for the beautiful character illustrations and story CGs that bring <strong>Kaiju Girls</strong> to life. The "Director's Cut" feature in <strong>Kaiju Girls</strong> allows players to experience Karasu-chan's original vision for the game's visual content. Karasu-chan's dedication to creating exceptional artwork is evident throughout <strong>Kaiju Girls</strong>.</p>
+                    </div>
+                    
+                    <h3>Development Philosophy</h3>
+                    <p>The <strong>Kaiju Girls</strong> development team believes in creating an immersive and emotionally engaging experience. Every aspect of <strong>Kaiju Girls</strong>, from the artwork to the music to the voice acting, is crafted with care and attention to detail. The team's commitment to quality is reflected in the decision to expand the game's content, including more artwork, dynamic effects, expanded story events, dual-language voice acting, and original music production.</p>
+                    
+                    <p>The development of <strong>Kaiju Girls</strong> is a labor of love, with the team working to ensure that every element of the game meets the highest standards. The decision to postpone the release date was made to ensure that <strong>Kaiju Girls</strong> delivers the polished and memorable experience that players deserve.</p>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="guide-section">
+                    <h2>Additional Information</h2>
+                    <h3>Language Support</h3>
+                    <p><strong>Kaiju Girls</strong> features comprehensive language support, including:</p>
+                    <ul class="gameplay-steps">
+                        <li>Full voice acting in Chinese and Japanese</li>
+                        <li>Interface and text support for English, Chinese (Simplified & Traditional), and Japanese</li>
+                        <li>Language settings can be adjusted in the game menu</li>
+                    </ul>
+                    
+                    <h3>Demo Version</h3>
+                    <p>A demo version of <strong>Kaiju Girls</strong> is currently in development and will be released before the full game launch on March 20, 2026. The demo will allow players to experience a portion of <strong>Kaiju Girls</strong> and get a taste of the game's artwork, storytelling, and gameplay mechanics.</p>
+                    
+                    <h3>Pre-Orders</h3>
+                    <p>Pre-orders for <strong>Kaiju Girls</strong> will be available closer to the March 20, 2026 release date. Stay tuned to the official website and social media channels for announcements about pre-order availability, pricing, and any special bonuses that may be included with pre-orders of <strong>Kaiju Girls</strong>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="static/logo.png" alt="Kaiju Girls Logo">
+                        
+                    </div>
+                    <p>Experience an immersive visual novel adventure in Kaiju Girls. Discover stunning artwork, rich storylines, and unforgettable characters in this captivating game.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="/guides">Guides</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Kaiju Girls. All rights reserved. | Experience an immersive visual novel adventure in Kaiju Girls.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+            });
+        }
+
+        if (closeMenu) {
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.character-card, .guide-section, .team-member').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+    <script src="static/base.js"></script>
+</body>
+</html>
+

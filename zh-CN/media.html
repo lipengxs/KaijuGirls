@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiju Girls Media - Screenshots, Videos & Artwork</title>
+    <meta name="description" content="Explore Kaiju Girls media gallery featuring stunning screenshots, gameplay videos, character artwork, and downloadable wallpapers. Discover the beautiful visual world of Kaiju Girls visual novel.">
+    <meta name="keywords" content="kaiju girls media, kaiju girls screenshots, kaiju girls videos, kaiju girls wallpapers, kaiju girls gallery, visual novel media, kaiju girls artwork, kaiju girls cg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaijugirls.com/media">
+    <meta property="og:title" content="Kaiju Girls Media - Screenshots, Videos & Artwork">
+    <meta property="og:description" content="Explore Kaiju Girls media gallery featuring stunning screenshots, gameplay videos, and beautiful artwork.">
+    <meta property="og:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kaiju Girls Media - Screenshots, Videos & Artwork">
+    <meta name="twitter:description" content="Explore Kaiju Girls media gallery featuring stunning screenshots, gameplay videos, and beautiful artwork.">
+    <meta name="twitter:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="apple-touch-icon" href="static/logo.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="ee9f27884397bc6d" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://kaijugirls.com/media">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDFZLSQVMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDFZLSQVMZ');
+    </script>
+    
+    <style>
+        .media-hero {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)), 
+                        url('static/images/media/2.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .media-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .media-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .media-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .media-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .media-tab {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .media-tab.active,
+        .media-tab:hover {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .media-item {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .media-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--shadow-color);
+        }
+
+        .media-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .media-item:hover .media-image {
+            transform: scale(1.05);
+        }
+
+        .media-info {
+            padding: 1.5rem;
+        }
+
+        .media-title {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .media-description {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .media-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .download-btn {
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            color: #ffffff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(135deg, #00ffff 0%, #00d4ff 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+        }
+
+        .view-btn {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .view-btn:hover {
+            background: var(--accent-color);
+            color: var(--secondary-color);
+        }
+
+        .video-section {
+            background: linear-gradient(135deg, rgba(20, 40, 60, 0.6), rgba(40, 70, 90, 0.4)),
+                        radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1), transparent);
+            padding: 4rem 0;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .video-item {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-info {
+            padding: 1.5rem;
+        }
+
+        .wallpaper-section {
+            background: linear-gradient(135deg, rgba(30, 50, 70, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1), transparent);
+            padding: 4rem 0;
+        }
+
+        .wallpaper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .wallpaper-item {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .wallpaper-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .wallpaper-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .wallpaper-item:hover .wallpaper-image {
+            transform: scale(1.05);
+        }
+
+        .wallpaper-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .wallpaper-title {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .wallpaper-resolution {
+            color: var(--text-color);
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: relative;
+            margin: 5% auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: var(--secondary-color);
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2001;
+        }
+
+        .close:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .media-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .media-hero p {
+                font-size: 1.1rem;
+            }
+
+            .media-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .media-tab {
+                width: 200px;
+                text-align: center;
+            }
+
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .wallpaper-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+
+            .media-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="static/logo.png" alt="Kaiju Girls Logo">
+                    
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/media" class="active">Media</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li class="language-selector" style="position: relative;">
+                        <select id="language-select" onchange="changeLanguage(this.value)" style="background: rgba(10, 26, 46, 0.8); border: 2px solid var(--accent-color); color: var(--accent-color); padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                            <option value="/">English</option>
+                            <option value="/zh-CN/">中文</option>
+                            <option value="/ja-JP/">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/media">Media</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="/">English</a></li>
+                <li><a href="/zh-CN/">中文</a></li>
+                <li><a href="/ja-JP/">日本語</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <script async="async" data-cfasync="false" src="//pl28136434.effectivegatecpm.com/e946f08f3aed55e5425fe4ac5eb0477b/invoke.js"></script>
+        <div id="container-e946f08f3aed55e5425fe4ac5eb0477b"></div>
+        <!-- Media Hero -->
+        <section class="media-hero">
+            <div class="container">
+                <h1>GALLERY</h1>
+                <p>Explore the stunning visual world of Kaiju Girls through our collection of screenshots, videos, character artwork, and downloadable wallpapers. Experience the beautiful artwork and immersive storytelling of Kaiju Girls.</p>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="media-content">
+            <div class="container">
+                <h2 class="text-center mb-4">Game Screenshots</h2>
+                <div class="media-tabs">
+                    <button class="media-tab active" data-category="all">All Screenshots</button>
+                    <button class="media-tab" data-category="characters">Characters</button>
+                    <button class="media-tab" data-category="cg">CG Artwork</button>
+                    <button class="media-tab" data-category="scenes">Story Scenes</button>
+                </div>
+
+                <div class="media-grid">
+                    <div class="media-item" data-category="characters">
+                        <img src="static/images/media/1.jpeg" alt="Kaiju Girls beautiful character artwork" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Character Artwork</h3>
+                            <p class="media-description">Explore stunning character illustrations from Kaiju Girls featuring beautifully designed characters with detailed artwork.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/1.jpeg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/1.jpeg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="cg">
+                        <img src="static/images/media/2.jpeg" alt="Kaiju Girls stunning CG artwork" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">CG Artwork</h3>
+                            <p class="media-description">Discover beautiful CG artwork from Kaiju Girls showcasing the game's exceptional visual quality and artistic style.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/2.jpeg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/2.jpeg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="scenes">
+                        <img src="static/images/media/3.jpeg" alt="Kaiju Girls story scene" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Story Scenes</h3>
+                            <p class="media-description">Experience captivating story scenes from Kaiju Girls with immersive visuals and emotional storytelling.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/3.jpeg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/3.jpeg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="cg">
+                        <img src="static/images/media/4.jpeg" alt="Kaiju Girls dynamic CG" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Dynamic CGs</h3>
+                            <p class="media-description">View dynamic CGs from Kaiju Girls featuring the game's "Director's Cut" content and enhanced visual effects.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/4.jpeg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/4.jpeg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="characters">
+                        <img src="static/images/media/scl59y.jpg" alt="Kaiju Girls character design" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Character Design</h3>
+                            <p class="media-description">Admire the detailed character designs in Kaiju Girls, each with unique personalities and beautiful artwork.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/scl59y.jpg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/scl59y.jpg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="scenes">
+                        <img src="static/images/media/scl59z.jpg" alt="Kaiju Girls visual novel scene" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Visual Novel Scene</h3>
+                            <p class="media-description">Immerse yourself in the visual novel experience of Kaiju Girls with beautifully crafted scenes and artwork.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/scl59z.jpg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/scl59z.jpg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="cg">
+                        <img src="static/images/media/scl5a8.jpg" alt="Kaiju Girls CG illustration" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">CG Illustration</h3>
+                            <p class="media-description">Explore exquisite CG illustrations from Kaiju Girls showcasing the game's high-quality artwork and visual storytelling.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/scl5a8.jpg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/scl5a8.jpg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="characters">
+                        <img src="static/images/media/scl5ad.jpg" alt="Kaiju Girls character artwork" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Character Artwork</h3>
+                            <p class="media-description">Discover beautiful character artwork from Kaiju Girls featuring detailed illustrations and expressive designs.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/scl5ad.jpg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/scl5ad.jpg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="cg">
+                        <img src="static/images/media/scl5af.jpg" alt="Kaiju Girls stunning CG" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Stunning CG</h3>
+                            <p class="media-description">Experience stunning CGs from Kaiju Girls with exceptional visual quality and artistic excellence.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/scl5af.jpg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/scl5af.jpg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-item" data-category="scenes">
+                        <img src="static/images/media/scl5ah.jpg" alt="Kaiju Girls beautiful scene" class="media-image">
+                        <div class="media-info">
+                            <h3 class="media-title">Beautiful Scene</h3>
+                            <p class="media-description">Enjoy beautiful scenes from Kaiju Girls showcasing the game's immersive storytelling and visual design.</p>
+                            <div class="media-actions">
+                                <a href="static/images/media/scl5ah.jpg" class="download-btn" download>Download</a>
+                                <a href="#" class="view-btn" onclick="openModal('static/images/media/scl5ah.jpg')">View Full Size</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section class="video-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Gameplay Videos</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/J7s8SAgcRYo?si=4wgOmXPpGwNXe9Y9" title="Kaiju Girls Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="media-title">Official Trailer</h3>
+                            <p class="media-description">Watch the official Kaiju Girls trailer showcasing beautiful artwork, character designs, and immersive storytelling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wallpapers Section -->
+        <section class="wallpaper-section">
+            <div class="container">
+                <h2 class="text-center mb-4">Wallpapers</h2>
+                <div class="wallpaper-grid">
+                    <div class="wallpaper-item">
+                        <img src="static/images/media/1.jpeg" alt="Kaiju Girls wallpaper 1" class="wallpaper-image">
+                        <div class="wallpaper-info">
+                            <h3 class="wallpaper-title">Character Artwork</h3>
+                            <p class="wallpaper-resolution">1920x1080</p>
+                            <a href="static/images/media/1.jpeg" class="download-btn" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="wallpaper-item">
+                        <img src="static/images/media/2.jpeg" alt="Kaiju Girls wallpaper 2" class="wallpaper-image">
+                        <div class="wallpaper-info">
+                            <h3 class="wallpaper-title">CG Artwork</h3>
+                            <p class="wallpaper-resolution">1920x1080</p>
+                            <a href="static/images/media/2.jpeg" class="download-btn" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="wallpaper-item">
+                        <img src="static/images/media/3.jpeg" alt="Kaiju Girls wallpaper 3" class="wallpaper-image">
+                        <div class="wallpaper-info">
+                            <h3 class="wallpaper-title">Story Scene</h3>
+                            <p class="wallpaper-resolution">1920x1080</p>
+                            <a href="static/images/media/3.jpeg" class="download-btn" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="wallpaper-item">
+                        <img src="static/images/media/4.jpeg" alt="Kaiju Girls wallpaper 4" class="wallpaper-image">
+                        <div class="wallpaper-info">
+                            <h3 class="wallpaper-title">Dynamic CG</h3>
+                            <p class="wallpaper-resolution">1920x1080</p>
+                            <a href="static/images/media/4.jpeg" class="download-btn" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="wallpaper-item">
+                        <img src="static/images/media/scl59y.jpg" alt="Kaiju Girls wallpaper 5" class="wallpaper-image">
+                        <div class="wallpaper-info">
+                            <h3 class="wallpaper-title">Character Design</h3>
+                            <p class="wallpaper-resolution">1920x1080</p>
+                            <a href="static/images/media/scl59y.jpg" class="download-btn" download>Download</a>
+                        </div>
+                    </div>
+
+                    <div class="wallpaper-item">
+                        <img src="static/images/media/scl59z.jpg" alt="Kaiju Girls wallpaper 6" class="wallpaper-image">
+                        <div class="wallpaper-info">
+                            <h3 class="wallpaper-title">Visual Novel Scene</h3>
+                            <p class="wallpaper-resolution">1920x1080</p>
+                            <a href="static/images/media/scl59z.jpg" class="download-btn" download>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for full-size images -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="static/logo.png" alt="Kaiju Girls Logo">
+                        
+                    </div>
+                    <p>Explore the visual world of Kaiju Girls through our media gallery. Experience beautiful artwork and immersive storytelling.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/media">Media</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="/zh-CN/">中文</a></li>
+                        <li><a href="/ja-JP/">日本語</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms-of-service">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Kaiju Girls. All rights reserved. | Explore the visual world of Kaiju Girls through our media gallery.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Media Tab Filtering
+        document.querySelectorAll('.media-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.media-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const category = tab.dataset.category;
+                const mediaItems = document.querySelectorAll('.media-item');
+                
+                mediaItems.forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeInUp 0.5s ease forwards';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Filter wallpaper items as well
+        document.querySelectorAll('.media-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const category = tab.dataset.category;
+                const wallpaperItems = document.querySelectorAll('.wallpaper-item');
+                
+                if (category === 'all') {
+                    wallpaperItems.forEach(item => item.style.display = 'block');
+                } else {
+                    wallpaperItems.forEach(item => item.style.display = 'none');
+                }
+            });
+        });
+
+        // Modal functions
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImage.src = imageSrc;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.media-item, .video-item, .wallpaper-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+    <script src="../static/base.js"></script>
+</body>
+</html>

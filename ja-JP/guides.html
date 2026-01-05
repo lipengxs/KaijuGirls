@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>怪獣ガールズ ガイド - ストーリー、キャラクター、ゲームプレイガイド</title>
+    <meta name="description" content="怪獣ガールズビジュアルノベルゲームの完全ガイド。ストーリー、キャラクター、ゲームプレイ、システム要件、開発チームについて学びましょう。怪獣ガールズに関するすべての包括的なリソース。">
+    <meta name="keywords" content="怪獣ガールズ ガイド, 怪獣ガールズ キャラクター, 怪獣ガールズ ストーリー, 怪獣ガールズ ゲームプレイ, 怪獣ガールズ システム要件, 怪獣ガールズ キャラクターガイド">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kaijugirls.com/ja-JP/guides">
+    <meta property="og:title" content="怪獣ガールズ ガイド - ストーリー、キャラクター、ゲームプレイガイド">
+    <meta property="og:description" content="怪獣ガールズビジュアルノベルゲームの完全ガイド。ストーリー、キャラクター、ゲームプレイについて学びましょう。">
+    <meta property="og:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="怪獣ガールズ ガイド - ストーリー、キャラクター、ゲームプレイガイド">
+    <meta name="twitter:description" content="怪獣ガールズビジュアルノベルゲームの完全ガイド。ストーリー、キャラクター、ゲームプレイについて学びましょう。">
+    <meta name="twitter:image" content="https://kaijugirls.com/static/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <link rel="apple-touch-icon" href="../static/logo.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../static/base.css?v=1.0.0">
+    
+    <!-- Microsoft Validation -->
+    <meta name="msvalidate.01" content="B362957FC36C5EDDD6079B6D78330424">
+    
+    <!-- IndexNow -->
+    <meta name="yandex-verification" content="ee9f27884397bc6d" />
+    <meta name="IndexNow-Key" content="B362957FC36C5EDDD6079B6D78330424">
+    <meta name="IndexNow-Url" content="https://kaijugirls.com/ja-JP/guides">
+    
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDFZLSQVMZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CDFZLSQVMZ');
+    </script>
+    
+    <style>
+        .guides-hero {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(75, 0, 130, 0.8)), 
+                        url('../static/images/media/3.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: var(--secondary-color);
+            padding: 150px 0 80px;
+            text-align: center;
+            position: relative;
+        }
+
+        .guides-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 800;
+        }
+
+        .guides-hero p {
+            font-size: 1.3rem;
+            color: var(--light-accent);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .guides-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, rgba(30, 60, 80, 0.5), rgba(50, 80, 100, 0.3)),
+                        radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent);
+        }
+
+        .guide-section {
+            background: var(--secondary-color);
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .guide-section h2 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 1rem;
+        }
+
+        .guide-section h3 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-section p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .character-card {
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow-color);
+        }
+
+        .character-card h4 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .character-card p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .requirements-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .requirements-table th,
+        .requirements-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .requirements-table th {
+            background: var(--gradient-primary);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .requirements-table td {
+            color: var(--text-color);
+        }
+
+        .requirements-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .team-member {
+            background: rgba(22, 33, 62, 0.6);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .team-member h4 {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .gameplay-steps {
+            list-style: none;
+            padding: 0;
+        }
+
+        .gameplay-steps li {
+            background: rgba(22, 33, 62, 0.6);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        .gameplay-steps li strong {
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .guides-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .guide-section {
+                padding: 2rem;
+            }
+
+            .guide-section h2 {
+                font-size: 2rem;
+            }
+
+            .character-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .requirements-table {
+                font-size: 0.9rem;
+            }
+
+            .requirements-table th,
+            .requirements-table td {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="../static/logo.png" alt="怪獣ガールズ Logo">
+                    <span class="logo-text">怪獣ガールズ</span>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="media.html">メディア</a></li>
+                    <li><a href="guides.html" class="active">ガイド</a></li>
+                    <li class="language-selector" style="position: relative;">
+                        <select id="language-select" onchange="changeLanguage(this.value)" style="background: rgba(10, 26, 46, 0.8); border: 2px solid var(--accent-color); color: var(--accent-color); padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                            <option value="/">English</option>
+                            <option value="/zh-CN/">中文</option>
+                            <option value="/ja-JP/">日本語</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile-menu">
+            <button class="close-menu">&times;</button>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="news.html">ニュース</a></li>
+                <li><a href="media.html">メディア</a></li>
+                <li><a href="guides.html">ガイド</a></li>
+                <li><a href="../">English</a></li>
+                <li><a href="../zh-CN/">中文</a></li>
+                <li><a href="index.html">日本語</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <script async="async" data-cfasync="false" src="//pl28136434.effectivegatecpm.com/e946f08f3aed55e5425fe4ac5eb0477b/invoke.js"></script>
+        <div id="container-e946f08f3aed55e5425fe4ac5eb0477b"></div>
+        
+        <!-- Guides Hero -->
+        <section class="guides-hero">
+            <div class="container">
+                <h1>ゲームガイド</h1>
+                <p>怪獣ガールズの完全ガイド - ストーリー、キャラクター、ゲームプレイ、この没入型ビジュアルノベルアドベンチャーについて知っておくべきすべてのことを学びましょう。</p>
+            </div>
+        </section>
+
+        <!-- Guides Content -->
+        <section class="guides-content">
+            <div class="container">
+                <!-- Story & Background -->
+                <div class="guide-section">
+                    <h2>ストーリーと世界観</h2>
+                    <p><strong>怪獣ガールズ</strong>は、人類と怪獣の間の戦いが終わってから何年も経ち、平和な新時代が始まった世界が舞台です。現代では、過去の怪獣の魂を含む少女たちが現れ、内なる怪獣形態を召喚する能力を持っています。これらの特別な個体は<strong>怪獣ガールズ</strong>（怪獣娘、Kaijū Musume）として知られています。</p>
+                    
+                    <p><strong>GIRLS</strong>という組織が、これらの怪獣ガールズを集め、保護するために形成されました。<strong>怪獣ガールズ</strong>の物語は、GIRLSの新人メンバーと、この新世界での彼らの冒険に焦点を当てています。プレイヤーは、美しく作られた世界を通じて感情的な旅を体験し、選択が重要で、すべての決定が物語の結果を形作る世界を体験します。</p>
+                    
+                    <h3>怪獣ガールズの世界</h3>
+                    <p><strong>怪獣ガールズ</strong>の世界は、過去と現在が交差する場所です。人類と怪獣の間の古代の戦いの残骸は平和な時代に道を譲りましたが、それらの衝突の遺産は怪獣ガールズの形で生き続けています。これらの少女たちは、伝説の怪獣の魂を体内に宿し、彼らに並外れた能力と怪獣形態に変身する力を与えています。</p>
+                    
+                    <p><strong>GIRLS</strong>組織は、これらの特別な個体のための避難所と訓練場の両方として機能します。組織を通じて、怪獣ガールズは自分の力を制御し、自分の遺産を理解し、過去の衝突を超えて動いた世界の複雑さをナビゲートすることを学びます。<strong>怪獣ガールズ</strong>の物語は、アイデンティティ、帰属感、そしてこれらのユニークな個体の間で形成される絆のテーマを探求します。</p>
+                </div>
+
+                <!-- Characters -->
+                <div class="guide-section">
+                    <h2>キャラクター</h2>
+                    <p><strong>怪獣ガールズ</strong>の世界には、それぞれ独自の個性、背景、能力を持つ多様なキャラクターが住んでいます。主要キャラクターは、GIRLSの3人の新人メンバーで構成されており、全員16歳で、ウルトラセブンのカプセル怪獣に基づいています。</p>
+                    
+                    <div class="character-grid">
+                        <div class="character-card">
+                            <h4>宮下アキ / アギラ (Aki Miyashita / Agira)</h4>
+                            <p><strong>怪獣ガールズ</strong>の主要視点キャラクターであるアキは、3人の中で臆病です。彼女は、活発で冷静なキャラクターの間に「挟まれた」興味深い状況のために、主人公として選ばれました。アキは最後に怪獣形態に変身し、車から幼稚園児を救ったときにその能力を獲得しました。<strong>怪獣ガールズ</strong>での彼女の旅は、成長、勇気、そして内なる力の発見を表しています。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>牛丸ミク / ミクラス (Miku Ushimaru / Miclas)</h4>
+                            <p><strong>怪獣ガールズ</strong>のチームで最もエネルギッシュなメンバーであるミクは、大怪獣ファイトのファンです。レッドキングへの憧れのために、彼女は最初に怪獣形態を獲得しました。ミクの熱意と情熱は、<strong>怪獣ガールズ</strong>でのチームの冒険の多くを推進します。彼女のキャラクターは物語にエネルギーと興奮をもたらし、<strong>怪獣ガールズ</strong>のキャストの愛されるメンバーにしています。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>白銀レイカ / ウインダム (Reika Shirogane / Windom)</h4>
+                            <p>現実にはBL（ボーイズラブ）ファンガールである、真面目な人。レイカはBL漫画を読んでいるときに怪獣形態を獲得しました。<strong>怪獣ガールズ</strong>での彼女のキャラクターは、真面目さとユーモアの間のバランスを提供し、チーム内に興味深いダイナミクスを作り出します。レイカのユニークな個性は、<strong>怪獣ガールズ</strong>の物語に深みを加えます。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>ゼットン (Zetton)</h4>
+                            <p>実際には大怪獣ファイトマッチのチャンピオンであり、GIRLSの最強の候補生である神秘的な女性。<strong>怪獣ガールズ</strong>では、ゼットンはアギラを自分の過去と似ていると見ており、物語に感情的な深みを加えるメンターと生徒の関係を作り出しています。彼女のキャラクターは、強さ、経験、そして挑戦を克服することから得られる知恵を表しています。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>ピグモン (Pigmon)</h4>
+                            <p><strong>怪獣ガールズ</strong>でGIRLSのメインアイドルであり、ウルトラ怪獣の精神を持つ少女が変身できるソウルライザーを紹介しました。ピグモンは<strong>怪獣ガールズ</strong>の世界で重要な役割を果たし、新人メンバーのためのガイドとインスピレーションの両方として機能します。彼女のキャラクターは希望と変身の可能性を体現しています。</p>
+                        </div>
+                        
+                        <div class="character-card">
+                            <h4>レッドキング (Red King)</h4>
+                            <p>大怪獣ファイトで最強の戦士の一人。強さにもかかわらず、レッドキングは<strong>怪獣ガールズ</strong>でかわいいものにも親和性を持っています。彼女は通常、ソウルライザーを使用せずに変身の影響で暴走した怪獣ガールズを狩ります。彼女のキャラクターは、<strong>怪獣ガールズ</strong>の世界に複雑さを加え、強さと優しさが共存できることを示しています。</p>
+                        </div>
+                    </div>
+                    
+                    <h3>その他のキャラクター</h3>
+                    <p><strong>怪獣ガールズ</strong>には、エレキング、ゴモラ、ザンドリアスなど、豊富なサポートキャラクターが登場します。<strong>怪獣ガールズ</strong>の各キャラクターは、ゲームの豊かな物語と世界構築に貢献し、プレイヤーに活気に満ちた魅力的な体験を作り出します。</p>
+                </div>
+
+                <!-- Gameplay Guide -->
+                <div class="guide-section">
+                    <h2>ゲームプレイガイド</h2>
+                    <p><strong>怪獣ガールズ</strong>は、美しいアートワークと豊かなストーリーテリングを組み合わせた没入型ビジュアルノベルゲームです。以下は、<strong>怪獣ガールズ</strong>で始めて、体験を最大限に活用するための包括的なガイドです。</p>
+                    
+                    <h3>怪獣ガールズの遊び方</h3>
+                    <ul class="gameplay-steps">
+                        <li>
+                            <strong>1. ストーリーを読む</strong>
+                            <strong>怪獣ガールズ</strong>はビジュアルノベル形式に従い、ストーリーを読み進め、美しく描かれたシーンとキャラクターの相互作用を体験します。<strong>怪獣ガールズ</strong>の物語は、慎重に作られた対話と世界を生き生きとさせる美しいアートワークを通じて展開します。
+                        </li>
+                        <li>
+                            <strong>2. 選択をする</strong>
+                            <strong>怪獣ガールズ</strong>全体を通じて、物語の進行に影響を与える決定点に遭遇します。<strong>怪獣ガールズ</strong>での選択は、異なるストーリーパス、キャラクター関係、そして最終的に異なるエンディングにつながる可能性があります。<strong>怪獣ガールズ</strong>での決定は、あなたのユニークな体験を形作るため、慎重に考えてください。
+                        </li>
+                        <li>
+                            <strong>3. 異なるパスを探索する</strong>
+                            <strong>怪獣ガールズ</strong>には複数の分岐ストーリーラインがあり、複数のプレイスルーを奨励しています。<strong>怪獣ガールズ</strong>の各パスは、物語とキャラクター関係の異なる側面を明らかにします。すべての可能な結果とエンディングを発見するために、<strong>怪獣ガールズ</strong>を再プレイしてください。
+                        </li>
+                        <li>
+                            <strong>4. ディレクターズカット機能を使用する</strong>
+                            <strong>怪獣ガールズ</strong>には、異なるCGバリエーションを切り替えることができるユニークな「ディレクターズカット」トグル機能が含まれています。<strong>怪獣ガールズ</strong>のゲーム設定を通じてこの機能にアクセスし、特定のシーンのオリジナルのビジョンを体験してください。<strong>怪獣ガールズ</strong>のこの機能は、再プレイ性を高め、追加コンテンツを提供します。
+                        </li>
+                        <li>
+                            <strong>5. ボイスアクティングを楽しむ</strong>
+                            <strong>怪獣ガールズ</strong>には、中国語と日本語の両方で完全なボイスアクティングが含まれています。<strong>怪獣ガールズ</strong>のプロフェッショナルなボイスパフォーマンスは、本物の感情でキャラクターを生き生きとさせます。<strong>怪獣ガールズ</strong>で言語設定を調整して、希望する言語でボイスアクティングを楽しむことができます。
+                        </li>
+                        <li>
+                            <strong>6. 音楽に没入する</strong>
+                            <strong>怪獣ガールズ</strong>のオリジナル音楽は、感情的な瞬間を強化し、物語全体に雰囲気を作り出します。<strong>怪獣ガールズ</strong>の音楽スコアは、プレイヤーをゲームの世界に完全に没入させるように設計されており、物語と視覚要素を補完します。
+                        </li>
+                    </ul>
+                    
+                    <h3>怪獣ガールズをプレイするためのヒント</h3>
+                    <p><strong>怪獣ガールズ</strong>の体験を最大限に活用するために：</p>
+                    <ul class="gameplay-steps">
+                        <li><strong>怪獣ガールズ</strong>のストーリーを時間をかけて読んでください - 物語は豊かで詳細です。</li>
+                        <li><strong>怪獣ガールズ</strong>で頻繁にゲームを保存して、異なる選択パスを探索してください。</li>
+                        <li><strong>怪獣ガールズ</strong>のキャラクターの相互作用に注意してください - それらは重要な物語要素を明らかにします。</li>
+                        <li><strong>怪獣ガールズ</strong>のディレクターズカット機能を試して、異なるCGバリエーションを確認してください。</li>
+                        <li>すべてのエンディングとストーリーパスを発見するために、<strong>怪獣ガールズ</strong>を複数回再プレイしてください。</li>
+                    </ul>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="guide-section">
+                    <h2>システム要件</h2>
+                    <p><strong>怪獣ガールズ</strong>をプレイする最良の体験を確保するために、システムが以下の要件を満たしていることを確認してください：</p>
+                    
+                    <table class="requirements-table">
+                        <thead>
+                            <tr>
+                                <th>コンポーネント</th>
+                                <th>最小要件</th>
+                                <th>推奨要件</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>OS</strong></td>
+                                <td>Windows 7/8/10/11 (64-bit)</td>
+                                <td>Windows 10/11 (64-bit)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>プロセッサ</strong></td>
+                                <td>Intel Core i3 または同等</td>
+                                <td>Intel Core i5 または同等</td>
+                            </tr>
+                            <tr>
+                                <td><strong>メモリ</strong></td>
+                                <td>4 GB RAM</td>
+                                <td>8 GB RAM</td>
+                            </tr>
+                            <tr>
+                                <td><strong>グラフィックス</strong></td>
+                                <td>DirectX 11 互換グラフィックスカード</td>
+                                <td>2GB VRAMを備えたDirectX 11互換グラフィックスカード</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ストレージ</strong></td>
+                                <td>5 GB の空き容量</td>
+                                <td>10 GB の空き容量</td>
+                            </tr>
+                            <tr>
+                                <td><strong>サウンドカード</strong></td>
+                                <td>DirectX 互換サウンドカード</td>
+                                <td>DirectX 互換サウンドカード</td>
+                            </tr>
+                            <tr>
+                                <td><strong>その他の注意事項</strong></td>
+                                <td colspan="2">初期アクティベーションにはインターネット接続が必要です。<strong>怪獣ガールズ</strong>は、英語、中国語（簡体字と繁体字）、日本語を含む複数の言語をサポートしています。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Development Team -->
+                <div class="guide-section">
+                    <h2>開発チーム</h2>
+                    <p><strong>怪獣ガールズ</strong>開発チームは、高品質のビジュアルノベル体験を提供することに取り組んでいます。チームは、<strong>怪獣ガールズ</strong>で美しいアートワーク、魅力的な物語、革新的な機能を提供するために不眠不休で働いています。</p>
+                    
+                    <div class="team-member">
+                        <h4>カラスちゃん（鴉醬老師）</h4>
+                        <p><strong>怪獣ガールズ</strong>のリードアーティスト兼キャラクターデザイナー。カラスちゃんは、<strong>怪獣ガールズ</strong>を生き生きとさせる美しいキャラクターイラストとストーリーCGを担当しています。<strong>怪獣ガールズ</strong>の「ディレクターズカット」機能により、プレイヤーはゲームの視覚コンテンツに対するカラスちゃんのオリジナルのビジョンを体験できます。カラスちゃんの卓越したアートワークを作成することへの献身は、<strong>怪獣ガールズ</strong>全体に見られます。</p>
+                    </div>
+                    
+                    <h3>開発理念</h3>
+                    <p><strong>怪獣ガールズ</strong>開発チームは、没入的で感情的に魅力的な体験を作り出すことを信じています。<strong>怪獣ガールズ</strong>のすべての側面、アートワークから音楽、ボイスアクティングまで、細心の注意と細部への配慮で作られています。チームの品質への取り組みは、より多くのアートワーク、動的効果、拡張されたストーリーイベント、二言語ボイスアクティング、オリジナル音楽制作を含むゲームのコンテンツを拡張する決定に反映されています。</p>
+                    
+                    <p><strong>怪獣ガールズ</strong>の開発は愛の労働であり、チームはゲームのすべての要素が最高基準を満たすように取り組んでいます。リリース日の延期は、<strong>怪獣ガールズ</strong>がプレイヤーに値する洗練された忘れられない体験を提供することを確保するために行われました。</p>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="guide-section">
+                    <h2>追加情報</h2>
+                    <h3>言語サポート</h3>
+                    <p><strong>怪獣ガールズ</strong>には包括的な言語サポートが含まれています：</p>
+                    <ul class="gameplay-steps">
+                        <li>中国語と日本語の完全なボイスアクティング</li>
+                        <li>英語、中国語（簡体字と繁体字）、日本語のインターフェースとテキストサポート</li>
+                        <li>ゲームメニューで言語設定を調整できます</li>
+                    </ul>
+                    
+                    <h3>デモ版</h3>
+                    <p><strong>怪獣ガールズ</strong>のデモ版は現在開発中で、2026年3月20日の完全なゲームローンチの前にリリースされます。デモでは、プレイヤーが<strong>怪獣ガールズ</strong>の一部を体験し、ゲームのアートワーク、ストーリーテリング、ゲームプレイメカニクスを味わうことができます。</p>
+                    
+                    <h3>予約注文</h3>
+                    <p><strong>怪獣ガールズ</strong>の予約注文は、2026年3月20日のリリース日に近づくと利用可能になります。予約注文の可用性、価格、<strong>怪獣ガールズ</strong>の予約注文に含まれる可能性のある特別なボーナスに関する発表については、公式ウェブサイトとソーシャルメディアチャンネルにご注目ください。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="../static/logo.png" alt="怪獣ガールズ Logo">
+                        <span class="logo-text">怪獣ガールズ</span>
+                    </div>
+                    <p>怪獣ガールズで没入型ビジュアルノベルアドベンチャーを体験してください。この魅力的なゲームで美しいアートワーク、豊かなストーリーライン、忘れられないキャラクターを発見してください。</p>
+                </div>
+                <div class="footer-links">
+                    <h3>ナビゲーション</h3>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="news.html">ニュース</a></li>
+                        <li><a href="media.html">メディア</a></li>
+                        <li><a href="guides.html">ガイド</a></li>
+                    </ul>
+                </div>
+               2026 怪獣
+                <div class="footer-links">
+                    <h3>法的情報</h3>
+                    <ul>
+                        <li><a href="../privacy-policy">プライバシーポリシー</a></li>
+                        <li><a href="../terms-of-service">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 怪獣ガールズ。全著作権所有。| 怪獣ガールズで没入型ビジュアルノベルアドベンチャーを体験してください。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+            });
+        }
+
+        if (closeMenu) {
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(10, 26, 46, 0.98)';
+            } else {
+                header.style.background = 'rgba(10, 26, 46, 0.95)';
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.character-card, .guide-section, .team-member').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+    <script src="../static/base.js"></script>
+</body>
+</html>
+
