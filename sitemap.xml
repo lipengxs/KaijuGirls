@@ -20,6 +20,12 @@
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://kaijugirls.com/guides</loc>
+        <lastmod>2026-01-05</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://kaijugirls.com/privacy-policy</loc>
         <lastmod>2026-01-05</lastmod>
         <priority>0.3</priority>
@@ -51,6 +57,12 @@
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>https://kaijugirls.com/zh-CN/guides</loc>
+        <lastmod>2026-01-05</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
     
     <!-- Japanese Pages (ja-JP) -->
     <url>
@@ -67,6 +79,12 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/ja-JP/media</loc>
+        <lastmod>2026-01-05</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://kaijugirls.com/ja-JP/guides</loc>
         <lastmod>2026-01-05</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
