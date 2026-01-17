@@ -23,6 +23,10 @@ Disallow: /temp/
 Disallow: /cgi-bin/
 Disallow: /*?*
 
+# Allow static resources including favicon
+Allow: /static/favicon.ico
+Allow: /favicon.ico
+
 # Sitemap location
 Sitemap: https://kaijugirls.com/sitemap.xml
 
