@@ -3,27 +3,33 @@
     <!-- English Pages -->
     <url>
         <loc>https://kaijugirls.com/</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-28</lastmod>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/news</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-28</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/media</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-28</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/guides</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-28</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://kaijugirls.com/release-date</loc>
+        <lastmod>2026-06-28</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/privacy-policy</loc>
