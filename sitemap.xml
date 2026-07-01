@@ -9,7 +9,7 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/news</loc>
-        <lastmod>2026-06-28</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
@@ -21,15 +21,45 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/guides</loc>
-        <lastmod>2026-06-28</lastmod>
+        <lastmod>2026-06-30</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
+        <loc>https://kaijugirls.com/beginner-guide</loc>
+        <lastmod>2026-06-30</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://kaijugirls.com/world-map</loc>
+        <lastmod>2026-06-30</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://kaijugirls.com/cg-checklist</loc>
+        <lastmod>2026-06-30</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
         <loc>https://kaijugirls.com/release-date</loc>
-        <lastmod>2026-06-28</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://kaijugirls.com/system-requirements</loc>
+        <lastmod>2026-06-30</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://kaijugirls.com/similar-games</loc>
+        <lastmod>2026-06-29</lastmod>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/privacy-policy</loc>
@@ -53,7 +83,7 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/zh-CN/news</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
@@ -65,7 +95,7 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/zh-CN/guides</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -79,7 +109,7 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/ja-JP/news</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
@@ -91,7 +121,7 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/ja-JP/guides</loc>
-        <lastmod>2026-01-05</lastmod>
+        <lastmod>2026-06-29</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
