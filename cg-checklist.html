@@ -19,10 +19,99 @@
     </script>
     <style>.hero{background:linear-gradient(135deg,rgba(30,20,55,.9),rgba(80,25,90,.75)),url('static/images/media/2.jpeg') center/cover;color:#fff;padding:150px 0 80px}.hero h1{font-size:clamp(2.2rem,5vw,3.6rem)}.hero p{max-width:900px;color:#f2eaff;line-height:1.7}.content{padding:4rem 0;background:var(--primary-color)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.5rem}.card{background:var(--secondary-color);border:1px solid var(--border-color);border-radius:10px;padding:1.5rem}.card h2{color:var(--accent-color)}.card li,.card p{color:var(--text-color);line-height:1.7}.table{width:100%;border-collapse:collapse;margin-top:1rem}.table th,.table td{border:1px solid var(--border-color);padding:.75rem;color:var(--text-color);text-align:left}.table th{color:var(--accent-color)}.link{color:var(--accent-color);font-weight:700}</style>
 </head>
-<body><header><div class="container"><nav><div class="logo"><img src="static/logo.png" alt="Kaiju Girls Logo"></div><ul><li><a href="/guides">Guides</a></li><li><a href="/world-map">Route Map</a></li><li><a href="/cg-checklist" class="active">CG Checklist</a></li></ul></nav></div></header>
-<main><section class="hero"><div class="container"><h1>KaiJu Girls CG Checklist</h1><p>Steam currently highlights 130 CG images for KaiJu Girls. Until a demo or launch build confirms route names and unlock rules, the best checklist is a spoiler-safe structure players can fill in later.</p></div></section>
-<section class="content"><div class="container"><div class="grid">
-<article class="card"><h2>Checklist Columns</h2><ul><li>CG number or temporary label</li><li>Chapter or story segment</li><li>Route or companion context</li><li>Unlock condition</li><li>Voice-scene marker</li><li>Spoiler level</li></ul></article>
-<article class="card"><h2>Save Strategy</h2><p>Create a save before major choices and keep the first playthrough mostly blind. Completion notes should be written after the scene, not before, so the tracker helps without ruining the story.</p></article>
-<article class="card"><h2>Spoiler Labels</h2><ul><li>Safe: no character or plot reveal.</li><li>Route: names a route or companion.</li><li>Late: reveals a major memory or ending context.</li><li>Hidden: keep collapsed until the reader opts in.</li></ul></article>
-</div><section class="card" style="margin-top:1.5rem"><h2>Starter Tracker Template</h2><table class="table"><thead><tr><th>CG</th><th>Segment</th><th>Context</th><th>Unlock Note</th><th>Voice</th><th>Spoiler</th></tr></thead><tbody><tr><td>CG-001</td><td>Opening</td><td>Protagonist memory</td><td>Story progress</td><td>TBC</td><td>Safe</td></tr><tr><td>CG-002</td><td>KaijuTamer setup</td><td>Taming event</td><td>Story progress</td><td>TBC</td><td>Route</td></tr><tr><td>CG-003</td><td>Companion scene</td><td>Official name TBC</td><td>Choice or route TBC</td><td>TBC</td><td>Hidden</td></tr></tbody></table><p>Continue with the <a class="link" href="/world-map">route map guide</a> and <a class="link" href="/beginner-guide">beginner guide</a>.</p></section></div></section></main><footer><div class="container"><div class="footer-bottom"><p>Unofficial fan tracker. Update only after Steam, developer posts, demo, or launch build confirms route details.</p></div></div></footer><script src="static/base.js"></script></body></html>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="static/logo.png" alt="Kaiju Girls Logo"></div>
+                <ul>
+                    <li><a href="/guides">Guides</a></li>
+                    <li><a href="/world-map">Route Map</a></li>
+                    <li><a href="/cg-checklist" class="active">CG Checklist</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>KaiJu Girls CG Checklist</h1>
+                <p>Steam currently highlights 130 CG images for KaiJu Girls. Until a demo or launch build confirms route names and unlock rules, the best checklist is a spoiler-safe structure players can fill in later.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="grid">
+                    <article class="card">
+                        <h2>Checklist Columns</h2>
+                        <ul>
+                            <li>CG number or neutral label</li>
+                            <li>Chapter or story segment</li>
+                            <li>Route or companion context</li>
+                            <li>Unlock condition</li>
+                            <li>Voice-scene marker</li>
+                            <li>Spoiler level</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h2>Save Strategy</h2>
+                        <p>Create a save before major choices and keep the first playthrough mostly blind. Completion notes should be written after the scene, not before, so the tracker helps without ruining the story.</p>
+                        <ul>
+                            <li>Keep one clean first-playthrough file.</li>
+                            <li>Create checkpoints before route choices.</li>
+                            <li>Name saves by chapter or scene type, not late spoilers.</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h2>Spoiler Labels</h2>
+                        <ul>
+                            <li><strong>Safe:</strong> no character or plot reveal.</li>
+                            <li><strong>Route:</strong> names a route or companion context.</li>
+                            <li><strong>Late:</strong> reveals a major memory or ending context.</li>
+                            <li><strong>Hidden:</strong> keep collapsed until the reader opts in.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <section class="card" style="margin-top:1.5rem">
+                    <h2>Starter Tracker Template</h2>
+                    <table class="table">
+                        <thead>
+                            <tr><th>CG</th><th>Segment</th><th>Context</th><th>Unlock Note</th><th>Voice</th><th>Spoiler</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>CG-001</td><td>Opening</td><td>Protagonist memory</td><td>Story progress</td><td>Unverified</td><td>Safe</td></tr>
+                            <tr><td>CG-002</td><td>KaijuTamer setup</td><td>Taming event</td><td>Story progress</td><td>Unverified</td><td>Route</td></tr>
+                            <tr><td>CG-003</td><td>Companion scene</td><td>Name pending official update</td><td>Choice or route pending update</td><td>Unverified</td><td>Hidden</td></tr>
+                        </tbody>
+                    </table>
+                    <p>Continue with the <a class="link" href="/world-map">route map guide</a> and <a class="link" href="/beginner-guide">beginner guide</a>.</p>
+                </section>
+
+                <section class="card" style="margin-top:1.5rem">
+                    <h2>Completion Workflow</h2>
+                    <p>A CG checklist becomes messy if it guesses route names too early. Keep early entries neutral, then update labels after the game, demo, or official posts confirm the structure. For search readers, the value is not just the final number; it is knowing where to save, which scenes are safe to preview, and which entries should stay hidden until a route is complete.</p>
+                    <p>For a real completion run, record the save file, visible choice, scene category, and whether the CG appeared automatically or after a route-specific decision. If the scene includes voice work, mark it separately instead of assuming every important CG is voiced.</p>
+                </section>
+
+                <section class="card" style="margin-top:1.5rem">
+                    <h2>Update Rules</h2>
+                    <p>When official route names or a demo build becomes available, add a route filter and split the table into story, companion, memory, and special-scene groups. Avoid uploading full CG images into the checklist; use local media only for page presentation and keep the tracker focused on navigation and completion notes.</p>
+                </section>
+
+                <section class="card" style="margin-top:1.5rem">
+                    <h2>How Players Should Use This Page</h2>
+                    <p>On a first playthrough, do not try to complete every entry. Use the checklist only to mark where a save was made, whether a CG appeared, and whether the scene felt route-specific. On a second playthrough, compare the same segment against a different choice path. If the CG changes, record the difference without naming the late-story reveal in the visible row.</p>
+                    <p>For guide writers, the cleanest workflow is to keep two versions of the notes: a public spoiler-light table and a private completion sheet. The public table should help readers find missing scenes; the private sheet can store exact choices, late-route names, and ending conditions until those details are safe to publish.</p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-bottom"><p>Unofficial fan tracker. Update only after Steam, developer posts, demo, or launch build confirms route details.</p></div>
+        </div>
+    </footer>
+    <script src="static/base.js"></script>
+</body>
+</html>
