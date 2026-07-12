@@ -95,5 +95,14 @@ function setLanguageSelector() {
 
 // 页面加载完成后执行
 document.addEventListener('DOMContentLoaded', function() {
+    if (!document.querySelector('[data-site-disclaimer="true"]')) {
+        const notice = document.createElement('div');
+        notice.dataset.siteDisclaimer = 'true';
+        notice.setAttribute('role', 'note');
+        notice.style.cssText = 'background:#33234a;color:#fff;padding:.7rem 1rem;text-align:center;font:600 14px/1.45 Arial,sans-serif;';
+        notice.textContent = 'Independent fan/community guide. Not affiliated with, endorsed by, or operated by the Kaiju Girls developers, publishers, Steam, or other rights holders.';
+        document.body.insertBefore(notice, document.body.firstChild);
+    }
+
     setLanguageSelector();
 });
