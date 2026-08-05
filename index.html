@@ -30,7 +30,6 @@
     <!-- Hreflang Tags -->
     <link rel="alternate" hreflang="en" href="https://kaijugirls.com/">
     <link rel="alternate" hreflang="zh-CN" href="https://kaijugirls.com/zh-CN/">
-    <link rel="alternate" hreflang="ja-JP" href="https://kaijugirls.com/ja-JP/">
     <link rel="alternate" hreflang="x-default" href="https://kaijugirls.com/">
     
     <!-- Preconnect for Performance -->
@@ -755,25 +754,8 @@
                 <p class="subtitle">Use primary sources for release status, published artwork, and store details; keep route and unlock claims clearly separated until verified.</p>
                 <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--light-accent);">Development Update Watch - Release Date To Be Confirmed</p>
                 <div class="countdown-container">
-                    <h2>Development Update Tracker</h2>
-                    <div class="countdown">
-                        <div class="countdown-item">
-                            <span id="days">00</span>
-                            <label>Days</label>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="hours">00</span>
-                            <label>Hours</label>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="minutes">00</span>
-                            <label>Minutes</label>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="seconds">00</span>
-                            <label>Seconds</label>
-                        </div>
-                    </div>
+                    <h2>Current status check</h2>
+                    <p>There is no site countdown. Verify the current release window, regional availability, demo status, price, language, and PC information on the <a href="https://store.steampowered.com/app/2203290/KaiJu_Girls/" target="_blank" rel="noopener noreferrer">official Steam listing</a> before making a purchase decision.</p>
                 </div>
             </div>
         </section>
@@ -785,7 +767,7 @@
                 <p><strong>Kaiju Girls</strong> is a visual novel project featuring artwork, CG-focused presentation, voice acting plans, and rich story content. A June 28, 2026 Steam metadata check found <strong>KaiJu Girls</strong> listed under app ID 2203290 with a broad <strong>2026</strong> release window, Adventure/Casual/RPG tags, and a KaijuTamer story setup. This page now treats the release date as <strong>to be confirmed</strong> instead of repeating older fixed-date targets.</p>
                 
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J7s8SAgcRYo?si=4wgOmXPpGwNXe9Y9" title="Kaiju Girls Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J7s8SAgcRYo?si=4wgOmXPpGwNXe9Y9" title="KaiJu Girls trailer reference" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 
                 <div class="game-info">
@@ -1042,29 +1024,6 @@
     </footer>
 
     <script>
-        // Countdown Timer - provisional milestone until an exact date is confirmed
-        const countDownDate = new Date("December 31, 2026 00:00:00").getTime();
-
-        const countdown = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-            if (distance < 0) {
-                clearInterval(countdown);
-                document.querySelector(".countdown").innerHTML = "<div style='font-size: 2rem; color: var(--accent-color); font-weight: bold;'>CHECK STEAM FOR CURRENT STATUS</div>";
-            }
-        }, 1000);
-
         // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {

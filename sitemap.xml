@@ -3,25 +3,25 @@
     <!-- English Pages -->
     <url>
         <loc>https://kaijugirls.com/</loc>
-        <lastmod>2026-07-18</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <priority>1.0</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/news</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/media</loc>
-        <lastmod>2026-06-28</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
         <loc>https://kaijugirls.com/guides</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
@@ -51,7 +51,7 @@
     </url>
     <url>
         <loc>https://kaijugirls.com/release-date</loc>
-        <lastmod>2026-07-21</lastmod>
+        <lastmod>2026-08-05</lastmod>
         <priority>0.8</priority>
         <changefreq>weekly</changefreq>
     </url>
@@ -106,31 +106,6 @@
         <changefreq>monthly</changefreq>
     </url>
     
-    <!-- Japanese Pages (ja-JP) -->
-    <url>
-        <loc>https://kaijugirls.com/ja-JP/</loc>
-        <lastmod>2026-01-05</lastmod>
-        <priority>1.0</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://kaijugirls.com/ja-JP/news</loc>
-        <lastmod>2026-07-21</lastmod>
-        <priority>0.8</priority>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://kaijugirls.com/ja-JP/media</loc>
-        <lastmod>2026-01-05</lastmod>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>https://kaijugirls.com/ja-JP/guides</loc>
-        <lastmod>2026-06-29</lastmod>
-        <priority>0.8</priority>
-        <changefreq>monthly</changefreq>
-    </url>
     <url><loc>https://kaijugirls.com/blog</loc><lastmod>2026-07-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url>
         <loc>https://kaijugirls.com/steam-demo-status</loc>
