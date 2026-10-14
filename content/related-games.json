@@ -1,29 +1,30 @@
 {
   "game": "KaiJu Girls",
   "origin": "https://kaijugirls.com",
-  "updated": "2026-10-12",
-  "title": "Games to Explore After KaiJu Girls",
-  "description": "Compare selected games for KaiJu Girls readers, with clear reasons to explore each setting and links to independent guides.",
-  "intro": "For readers drawn to character stories, these alternatives explore mystery or cinematic science fiction. Their presentation and interaction differ substantially from a visual novel.",
-  "disclosure": "These independent guide websites are maintained by the same operator. Recommendations are editorial suggestions, not official partnerships or endorsements. Official game sources are listed separately.",
-  "entries": [
+  "updated": "2026-10-14",
+  "title": "KaiJu Girls Reading Guide",
+  "description": "Choose a KaiJu Girls guide for getting started, checking the demo or planning route and CG reading. Keep story spoilers separate from basic setup.",
+  "intro": "Choose a KaiJu Girls guide for getting started, checking the demo or planning route and CG reading. Keep story spoilers separate from basic setup.",
+  "disclosure": "",
+  "entries": [],
+  "articles": [],
+  "guideRecommendations": [],
+  "directoryLinkRel": "nofollow",
+  "internalResources": [
     {
-      "name": "Grave Seasons",
-      "url": "https://graveseasons.com/",
-      "category": "Farming & Life Sims",
-      "tags": "Farming · relationships · mystery",
-      "reason": "Explore how tending a farm and building relationships sit alongside a supernatural mystery. The guide separates everyday systems from spoiler-sensitive investigation information.",
-      "difference": "Grave Seasons centres on a farming life entwined with a supernatural investigation; KaiJu Girls centres on character-focused visual-novel storytelling. Similar interests do not imply identical mechanics or multiplayer support."
+      "name": "Getting started",
+      "path": "/beginner-guide",
+      "reason": "Start with the overview before deciding which systems or story questions you need to look up."
     },
     {
-      "name": "REPLACED",
-      "url": "https://replacedgame.com/",
-      "category": "Story & Adventure",
-      "tags": "Cinematic action · pixel art · science fiction",
-      "reason": "Explore cinematic pixel-art action in a retro-futuristic world. Follow the guide for atmosphere and narrative interest while expecting a different interaction style from a life sim or visual novel.",
-      "difference": "REPLACED centres on cinematic action in a retro-futuristic world; KaiJu Girls centres on character-focused visual-novel storytelling. Similar interests do not imply identical mechanics or multiplayer support."
+      "name": "Routes and CG reading",
+      "path": "/route-cg-guide",
+      "reason": "Use the route and CG overview when you want focused reading; decide how much story detail you want to see."
+    },
+    {
+      "name": "Check the demo",
+      "path": "/demo-guide",
+      "reason": "Read the demo guide before comparing its scope with the full game."
     }
-  ],
-  "articles": [],
-  "guideRecommendations": []
+  ]
 }
